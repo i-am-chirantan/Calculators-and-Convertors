@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <!-- <link rel="stylesheet" href="styles.css" type="text/css"> -->
+</head>
+
+<body>
+    <div><input type="text" name="uitkomst" id="uitkomst" class="display-box"></div>
+    <div><output type="text" name="res" id="res" class="display-box"></output></div>
+
+    <table class="calculator">
+
+        <tr>
+            <td>
+                <input type="button" class="btn1" value="C" onClick="clrall()" />
+            </td>
+            <td><input type="button" class="button grey" value="&#8592;" onclick='back()'></td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" class="btn1" value="1" onClick="nmr('1')" />
+            </td>
+            <td>
+                <input type="button" class="btn1" value="2" onClick="nmr('2')" />
+            </td>
+            <td>
+                <input type="button" class="btn1" value="3" onClick="nmr('3')" />
+            </td>
+            <td>
+                <input type="button" class="btn1" value="-" onClick="nmr('-')" />
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <input type="button" class="btn1" value="4" onClick="nmr('4')" />
+            </td>
+            <td>
+                <input type="button" class="btn1" value="5" onClick="nmr('5')" />
+            </td>
+            <td>
+                <input type="button" class="btn1" value="6" onClick="nmr('6')" />
+            </td>
+            <td>
+                <input type="button" class="btn1" value="X" onClick="nmr('*')" />
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <input type="button" class="btn1" value="7" onClick="nmr('7')" />
+            </td>
+            <td>
+                <input type="button" class="btn1" value="8" onClick="nmr('8')" />
+            </td>
+            <td>
+                <input type="button" class="btn1" value="9" onClick="nmr('9')" />
+            </td>
+            <td>
+                <input type="button" class="btn1" value="&divide;" onClick="nmr('/')" />
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <input type="button" class="btn1" value=". " onClick="nmr('.')" />
+            </td>
+            <td>
+                <input type="button" class="btn1" value="0" onClick="nmr('0')" />
+            </td>
+            <td>
+                <input type="button" class="btn1" value="+" onClick="nmr('+')" />
+            </td>
+            <td>
+                <input type="button" class="btn1" value="=" onClick="eqn()" />
+            </td>
+        </tr>
+
+    </table>
+    <script src="script.js"></script>
+</body>
+
+</html>
