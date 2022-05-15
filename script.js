@@ -1,25 +1,22 @@
+function nmr(val) {
+    document.getElementById('userinput').value += val;
+}
 
+function eqn() {
 
-    // toon values die aangeklikt worden in de 'uitkomst' input.
-    function nmr(val){
-        document.getElementById('uitkomst').value+=val;
-    }
+    var value1 = document.getElementById('userinput').value;
 
-    function eqn(){
+    var res = eval(value1);
 
-        var value1= document.getElementById('uitkomst').value;
+    document.getElementById('res').value = res;
+}
 
-        var res = eval(value1);
-
-        document.getElementById('res').value=res;
-    }
-
-    function clrall(){
-        document.getElementById('uitkomst').value="";
-        document.getElementById('res').value="0";
-    }
+function clrall() {
+    document.getElementById('userinput').value = "";
+    document.getElementById('res').value = "0";
+}
 
 function back() {
-    var value = document.getElementById("uitkomst").value;
-    document.getElementById("uitkomst").value = value.substr(0, value.length - 1);
+    var value = document.getElementById("userinput").value;
+    document.getElementById("userinput").value = value.substr(0, value.length - 1);
 }

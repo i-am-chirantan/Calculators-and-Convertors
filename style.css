@@ -1,0 +1,20 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+    width: 100%;
+    margin: 14% auto;
+    text-align: center;
+}
+
+table {
+    margin: 0 auto;
+}
+
+.display-box {
+    width: 16%;
+    border: 3px solid black;
+    text-align: center;
+    margin: 10px 10px 10px 10px;
+}
