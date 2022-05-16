@@ -3,24 +3,30 @@
 }
 
 .container {
-    margin: 8% 38% 8% 38%;
+    margin: 250px 500px;
     text-align: center;
     border: 2px solid black;
     border-radius: 15px;
-    padding: 10px;
-    background-size: 550px;
-    background-repeat: no-repeat;
+    padding: 15px 15px 15px 15px;
 }
 
-h1 {
-    color: #1793ff;
+#num,
+#denom {
+    margin: 10px 10px 10px 10px;
+    color: rgb(0, 0, 0);
+    width: 80%;
+    size: 50;
 }
 
 table {
     margin: 0 auto;
 }
 
-#userinput {
+#a,
+#b,
+#c,
+#d {
+    margin: 10px 10px;
     color: rgb(0, 0, 0);
     width: 80%;
     size: 50;
@@ -32,19 +38,19 @@ table {
     margin: 10px 10px 10px 10px;
 }
 
-#res {
-    margin: 10px 10px 10px 10px;
-    color: rgb(0, 0, 0);
-    width: 80%;
-    size: 50;
+#sign {
+    size: 4000px 40px;
 }
 
-.calculator {
-    margin-top: 10px;
+#btn1 {
+    margin-right: 150px;
 }
 
-.btn1,
-.btn-grey {
+#btn2 {
+    margin-left: 20px;
+}
+
+.btn {
     background-color: #bdbdbd;
     color: rgb(0, 0, 0);
     padding: 15px 27px;
@@ -57,8 +63,7 @@ table {
     box-shadow: 3px 3px #000000ab;
 }
 
-.btn1:hover,
-.btn-grey:hover {
+.btn:hover {
     box-shadow: 3px 3px #25410add;
     background-color: rgba(119, 192, 255, 0.264);
     transform: scale(1.2);

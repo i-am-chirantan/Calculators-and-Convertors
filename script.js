@@ -4,7 +4,7 @@ function nmr(val) {
 
 function eqn() {
 
-    var value1 = document.getElementById('userinput').value;
+    var value1 = document.getElementById("userinput").value;
     var res;
     try {
         // Code to run
