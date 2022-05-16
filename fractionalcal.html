@@ -1,52 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <title>fractional calculator</title>
+    <meta charset="utf-8">
+    <title> Fractional Calculator </title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fractionalcal.css">
+    <script src="fractionalcal.js"></script>
 </head>
+
 <body>
-    <div>
+    <div class="container">
+        <div><output type="text" id="num" class="display-box"></output></div>
+        <div>--------------</div>
+        <div><output type="text" id="denom" class="display-box"></output></div>
         <table>
             <tr>
                 <td>
-                    <input type="text" onclick='nmr()'>
+                    <input type="number" id="a">
                 </td>
                 <td></td>
                 <td>
-                    <input type="text" onclick='nmr()'>
-                </td>
-                <td>
-                    <p>?</p>
+                    <input type="number" id="b">
                 </td>
             </tr>
             <tr>
-                <td >----------</td>
-                <td></td> <!-- separator -->
+                <td></td>
                 <td>
 
-                    <label for="sign"></label>
+                    <label for="sign">Operation</label>
 
-                <select name="cars" id="cars">
-                    <option value="+">&#43;</option>
-                    <option value="-">&#45;</option>
-                    <option value="*">x</option>
-                    <option value="/">&#47;</option>
+                    <select name="Operator" id="sign">
+                    <option value="+" class="opr" id="+">&#43;</option>
+                    <option value="-" class="opr" id="-">&#45;</option>
+                    <option value="*" class="opr" id="*">X</option>
+                    <option value="/" class="opr" id="/">&#47;</option>
                 </select></td>
-                <td>-----------</td> <!-- separator -->
-                <td>----------</td>
             </tr>
             <tr>
-                <td><input type="text" onclick='nmr()'></td>
+                <td><input type="number" id="c"></td>
                 <td></td>
                 <td>
-                    <input type="text" onclick='nmr()'>
+                    <input type="number" id="d">
                 </td>
-                <td><p>?</p></td>
             </tr>
         </table>
+        <div><button type="submit " value="calculate " class="btn " id="btn1 " onclick="eval()">Calculate</button>
+            <button type="reset " value="clear " class="btn " id="btn2" onclick="clr()">Clear</button>
+        </div>
     </div>
-    <div><button type="submit" value="calculate">calculate</button>
-        <button type="reset" value="clear">clear</button>
-    </div>
-
 </body>
+
 </html>
