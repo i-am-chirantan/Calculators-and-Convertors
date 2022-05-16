@@ -5,22 +5,27 @@
 </head>
 <body>
     <div>
+        <h1>Fraction Calculator</h1>
+        <p>
+        Below are multiple fraction calculators capable of addition, subtraction, multiplication, division, simplification, and
+        conversion between fractions and decimals. Fields above the solid black line represent the numerator, while fields below
+        represent the denominator</p>
         <table>
             <tr>
                 <td>
                     <input type="text" onclick='nmr()'>
                 </td>
                 <td></td>
+                <td></td>
                 <td>
                     <input type="text" onclick='nmr()'>
                 </td>
-                <td>
-                    <p>?</p>
-                </td>
+                <td></td><td> ?</td>
             </tr>
             <tr>
                 <td >----------</td>
                 <td></td> <!-- separator -->
+
                 <td>
 
                     <label for="sign"></label>
@@ -31,21 +36,71 @@
                     <option value="*">x</option>
                     <option value="/">&#47;</option>
                 </select></td>
-                <td>-----------</td> <!-- separator -->
+
+                <td>-----------</td><td> = </td> <!-- separator -->
+
                 <td>----------</td>
             </tr>
             <tr>
                 <td><input type="text" onclick='nmr()'></td>
                 <td></td>
+                <td></td>
                 <td>
                     <input type="text" onclick='nmr()'>
                 </td>
-                <td><p>?</p></td>
+                <td></td>
+                <td>?</td>
             </tr>
         </table>
     </div>
     <div><button type="submit" value="calculate">calculate</button>
         <button type="reset" value="clear">clear</button>
+    </div>
+
+    <div>
+        <h1>Mixed Numbers Calculator</h1>
+        <table>
+            <tr>
+                <td><input type="text" onclick='nmr()'></td>
+                <td>
+                    <label for="sign"></label>
+
+                    <select name="cars" id="cars">
+                        <option value="+">&#43;</option>
+                        <option value="-">&#45;</option>
+                        <option value="*">x</option>
+                        <option value="/">&#47;</option>
+                    </select>
+                </td>
+                <td><input type="text" onclick='nmr()'></td>
+                <td> = ? </td>
+            </tr>
+        </table>
+    </div>
+    <div><button type="submit" value="calculate">calculate</button>
+        <button type="reset" value="clear">clear</button>
+    </div>
+    <div>
+        <h1>Decimal to Fractional Calculator</h1>
+        <tr><td><input type="text" onclick='nmr()'>
+           <td> = ?/?</td>
+    </div>
+    <div><button type="submit" value="calculate">calculate</button>
+    <button type="reset" value="clear">clear</button></div>
+    <div>
+        <h1>Fraction to Decimal Calculator</h1>
+        <table>
+            <tr>
+                <td><input type="text" onclick='nmr()'></td>
+            </tr>
+            <tr>
+                <td>------------</td> <td> =  ? </td>
+            </tr>
+            <tr>
+                <td><input type="text" onclick='nmr()'></td>
+            </tr>
+
+        </table>
     </div>
 
 </body>
