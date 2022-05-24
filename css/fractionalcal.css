@@ -2,70 +2,47 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.container {
-    margin: 250px 500px;
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.box_design {
+    color: rgb(0, 0, 0);
+    height: 40px;
+    background-color: rgba(255, 228, 196, 0.248);
+    border-color: #4d4e4e;
+    border-radius: 70px;
     text-align: center;
+}
+
+.container {
+    margin: 50px 50px;
+    text-align: left;
     border: 2px solid black;
     border-radius: 15px;
-    padding: 15px 15px 15px 15px;
-}
-
-#num,
-#denom {
-    margin: 10px 10px 10px 10px;
-    color: rgb(0, 0, 0);
-    width: 80%;
-    size: 50;
-}
-
-table {
-    margin: 0 auto;
+    padding: 15px 15px 15px 45px;
 }
 
 #a,
 #b,
 #c,
 #d {
-    margin: 10px 10px;
-    color: rgb(0, 0, 0);
     width: 80%;
+    size: 50;
+    margin: 10px 10px 10px 10px;
+}
+
+.calculate,
+.clear {
+    color: rgb(0, 0, 0);
+    width: 10%;
     size: 50;
     height: 40px;
     background-color: rgba(255, 228, 196, 0.248);
     border-color: #4d4e4e;
     border-radius: 70px;
     text-align: center;
-    margin: 10px 10px 10px 10px;
-}
-
-#sign {
-    size: 4000px 40px;
-}
-
-#btn1 {
-    margin-right: 150px;
-}
-
-#btn2 {
-    margin-left: 20px;
-}
-
-.btn {
-    background-color: #bdbdbd;
-    color: rgb(0, 0, 0);
-    padding: 15px 27px;
-    text-align: center;
-    font-size: 20px;
-    margin: 2px 2px;
-    cursor: pointer;
-    border-radius: 12px;
-    border: transparent;
-    box-shadow: 3px 3px #000000ab;
-}
-
-.btn:hover {
-    box-shadow: 3px 3px #25410add;
-    background-color: rgba(119, 192, 255, 0.264);
-    transform: scale(1.2);
-    border-radius: 300px;
+    margin: 10px 10px 10px 38px;
 }

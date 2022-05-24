@@ -1,12 +1,12 @@
-function eval() {
+function calculate() {
     var a = document.getElementById('a').value;
     var b = document.getElementById('b').value;
     var c = document.getElementById('c').value;
     var d = document.getElementById('d').value;
-    a = parseInt(a);
-    b = parseInt(b);
-    c = parseInt(c);
-    d = parseInt(d);
+    a = parseFloat(a);
+    b = parseFloat(b);
+    c = parseFloat(c);
+    d = parseFloat(d);
 
     sign = document.getElementById('sign').value;
     if (c == 0 || d == 0) {
