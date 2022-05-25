@@ -177,5 +177,13 @@ function InfixtoPostfix() {
         st += " " + postfix[i];
 
     // To print postfix expression in HTML
-    document.getElementById("res").innerHTML = evaluatePostfix(st);
+    var out = evaluatePostfix(st);
+    document.getElementById("res").innerHTML = out;
+    if (isNaN(out)) {
+        document.getElementById("res").innerHTML = "Invalid Expression";
+        document.getElementById("res").style.color = "red";
+    } else {
+        document.getElementById("res").style.color = "green";
+    }
+
 }
