@@ -1,6 +1,11 @@
 * {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    scroll-behavior: smooth;
     overflow: hidden;
+}
+
+#calculimg {
+    display: none;
 }
 
 h1 {
@@ -17,6 +22,7 @@ h1 {
     background-size: 550px;
     background-repeat: no-repeat;
     overflow-wrap: break-word;
+    overflow: auto;
 }
 
 .calculator {
@@ -106,4 +112,38 @@ button:hover {
 
 .complex-stuff {
     background-color: #80ffff;
+}
+
+@media(max-width:418px) {
+    #calculimg {
+        display: inline-block;
+        height: 5em;
+        width: auto;
+    }
+    h1 {
+        display: none;
+    }
+}
+
+@media(max-width:590px) {
+    button {
+        width: 70px;
+        height: 39px;
+        margin: 2px;
+    }
+    .functions-one {
+        width: 650px;
+    }
+    .functions-two {
+        width: 500px;
+    }
+}
+
+@media(max-width:640px) {
+    input {
+        width: 80%;
+        align-self: center;
+        margin-left: 3px;
+        margin-right: 3px;
+    }
 }
