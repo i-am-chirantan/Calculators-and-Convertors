@@ -1,16 +1,24 @@
 function output() {
 
     var k = document.getElementById("screen").value;
-    if (k.length == 0)
-        return;
-    k = k.replace(/%/g, "*0.01*");
-    if (k.indexOf("/0") != -1)
-        error();
+    k = k.replace('+', '%2B');
+    /*S
 
+    if (k.length == 0) {
+        document.getElementById("result").value = "";
+        return;
+    }
+    k = k.replace(/%/g, "*0.01*");
+    /*  if (k.indexOf("/0") != -1) {
+         error();
+         return;
+     }
     validparen(k);
     trimoper(k.charAt(k.length - 1));
     trimoper(k.charAt(0));
     endwithnum(k);
+     */
+
     const options = {
         method: 'GET',
         headers: {
@@ -18,8 +26,8 @@ function output() {
             'X-RapidAPI-Key': 'fffdeffd94msh665c25c03c42d9ep186373jsn3e8d579657bb'
         }
     };
-
-    fetch('https://evaluate-expression.p.rapidapi.com/?expression=' + k, options, {
+    var url = 'https://evaluate-expression.p.rapidapi.com/?expression='.concat(k);
+    fetch(url, options, {
             headers: {
                 'Content-Type': 'application/json',
                 'Accept': 'application/json'
@@ -28,15 +36,11 @@ function output() {
         .then(response => response.json())
         .then(data => {
             document.getElementById('result').innerHTML = data;
-            console.log(typeof(data));
+            document.getElementById('result').style.color = "purple";
+            console.log(url);
         });
 }
 
-function error() {
-    document.getElementById("result").value = "Invalid Expression";
-    document.getElementById("result").style.color = "red";
-    return;
-}
 
 function trimoper(pos) {
     switch (pos) {
@@ -46,8 +50,9 @@ function trimoper(pos) {
         case '/':
         case '%':
         case '^':
-            error();
+            error("green");
     }
+    return;
 }
 
 function validparen(str) {
@@ -65,11 +70,20 @@ function validparen(str) {
         }
     }
     if (stack.length != 0) {
-        error();
+        error("blue");
+        return;
     }
 }
 
 function endwithnum(str) {
-    if (str[str.length - 1] = isNaN)
-        error();
+    if (isNaN(str.charAt(str.length - 1))) {
+        error("violet");
+        return;
+    }
+}
+
+function error(colour) {
+    document.getElementById("result").value = "Invalid Expression";
+    document.getElementById("result").style.color = colour;
+    return;
 }

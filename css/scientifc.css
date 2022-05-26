@@ -1,5 +1,22 @@
-a {
-    background-color: red;
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow: hidden;
+}
+
+h1 {
+    color: #1793ff;
+}
+
+.container {
+    margin: 10px;
+    align-items: center;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 10px;
+    background-size: 550px;
+    background-repeat: no-repeat;
+    overflow-wrap: break-word;
 }
 
 .calculator {
@@ -31,9 +48,11 @@ input {
 output {
     padding: 159px auto;
     font-size: 24px;
-    margin-left: 40%;
+    text-align: center;
+    overflow-wrap: break-word;
     width: 80%;
     size: 50;
+    margin: 5px 5px;
 }
 
 .calc-buttons {
