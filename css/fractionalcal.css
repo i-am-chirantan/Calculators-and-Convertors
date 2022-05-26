@@ -46,3 +46,10 @@ input::-webkit-inner-spin-button {
     text-align: center;
     margin: 10px 10px 10px 38px;
 }
+
+.calculate:hover,
+.clear.calculate:hover {
+    background-color: blueviolet;
+    color: whitesmoke;
+    zoom: 1;
+}

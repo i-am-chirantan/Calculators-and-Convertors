@@ -1,13 +1,26 @@
-function nmr(val) {
-    document.getElementById('userinput').value += val;
+function isOperator(a) {
+    if (a == '+' || a == '-' || a == '*' || a == '/' || a == '%' || a == '^') {
+        return true;
+    }
+    return false;
 }
 
-function clrall() {
-    document.getElementById('userinput').value = "";
-    document.getElementById('res').value = "";
+function nmr(val, input) {
+    var prev = document.getElementById(input).value;
+    if (prev.length > 0 && isOperator(prev.charAt(prev.length - 1)) && isOperator(val)) {
+        document.getElementById(input).value = prev.substr(0, prev.length - 1) + val;
+        return;
+    }
+    document.getElementById(input).value = prev + val;
+
 }
 
-function back() {
-    var value = document.getElementById("userinput").value;
-    document.getElementById("userinput").value = value.substr(0, value.length - 1);
+function clrall(input, output) {
+    document.getElementById(input).value = "";
+    document.getElementById(output).value = "";
+}
+
+function back(input) {
+    var value = document.getElementById(input).value;
+    document.getElementById(input).value = value.substr(0, value.length - 1);
 }

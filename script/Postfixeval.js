@@ -46,7 +46,7 @@ function evaluatePostfix(exp) {
                     break;
 
                 case '/':
-                    stack.push(parseInt(val2 / val1, 10));
+                    stack.push(parseFloat(val2 / val1, 10));
                     break;
 
                 case '*':
@@ -163,6 +163,9 @@ function InfixtoPostfix() {
                 i++;
             }
             postfix[temp++] = el;
+            if (i + 1 < infixval.length && infixval[i + 1] == '(') {
+                push('*');
+            }
         }
     }
 
