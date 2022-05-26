@@ -2,22 +2,21 @@ function output() {
 
     var k = document.getElementById("screen").value;
     k = k.replace('+', '%2B');
-    /*S
 
     if (k.length == 0) {
         document.getElementById("result").value = "";
         return;
     }
     k = k.replace(/%/g, "*0.01*");
-    /*  if (k.indexOf("/0") != -1) {
-         error();
-         return;
-     }
+    if (k.indexOf("/0") != -1) {
+        error();
+        return;
+    }
     validparen(k);
     trimoper(k.charAt(k.length - 1));
     trimoper(k.charAt(0));
     endwithnum(k);
-     */
+
 
     const options = {
         method: 'GET',
