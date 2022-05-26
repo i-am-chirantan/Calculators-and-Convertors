@@ -100,3 +100,10 @@ h1 {
         font-size: 93%;
     }
 }
+
+@media(max-width:600px) {
+    .container {
+        overflow: scroll;
+        height: 500px;
+    }
+}

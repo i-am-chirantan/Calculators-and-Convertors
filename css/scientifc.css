@@ -3,12 +3,6 @@
     overflow: hidden;
 }
 
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-}
-
 #calculimg {
     display: none;
 }
@@ -27,7 +21,6 @@ h1 {
     background-size: 550px;
     background-repeat: no-repeat;
     overflow-wrap: break-word;
-    overflow: auto;
 }
 
 .calculator {
@@ -150,5 +143,12 @@ button:hover {
         align-self: center;
         margin-left: 3px;
         margin-right: 3px;
+    }
+}
+
+@media(max-width:600px) {
+    .container {
+        overflow: scroll;
+        height: 500px;
     }
 }
