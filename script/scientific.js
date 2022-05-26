@@ -21,8 +21,8 @@ function output() {
     const options = {
         method: 'GET',
         headers: {
-            'X-RapidAPI-Host': 'evaluate-expression.p.rapidapi.com',
-            'X-RapidAPI-Key': 'fffdeffd94msh665c25c03c42d9ep186373jsn3e8d579657bb'
+            'X-RapidAPI-Host': config.MY_API_TOKEN,
+            'X-RapidAPI-Key': config.SECRET_API_KEY,
         }
     };
     var url = 'https://evaluate-expression.p.rapidapi.com/?expression='.concat(k);
