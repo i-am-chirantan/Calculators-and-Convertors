@@ -1,11 +1,11 @@
-function output() {
+function output(x, y) {
 
-    var k = document.getElementById("screen").value;
+    var k = document.getElementById(x).value;
 
     try {
 
-        document.getElementById('result').innerHTML = math.evaluate(k);
-        document.getElementById('result').style.color = "green";
+        document.getElementById(y).innerHTML = math.evaluate(k);
+        document.getElementById(y).style.color = "green";
     } catch (err) {
         error();
     }
