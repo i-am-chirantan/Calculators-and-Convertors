@@ -152,3 +152,9 @@ button:hover {
         height: fit-content;
     }
 }
+
+@media screen and (max-width: 480px) {
+    body {
+        overflow-y: scroll;
+    }
+}
