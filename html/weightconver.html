@@ -3,16 +3,10 @@
 
 <head>
     <title>Weight Converter</title>
-    <!-- for styling -->
-    <style>
-        span {
-            color: Green;
-        }
-    </style>
+
 </head>
 
 <body>
-    <!-- Title of your Converter -->
     <h2 style="color: Green;">Weight Converter</h2>
 
     <p>Enter a value in the Kilograms field to convert :</p>
@@ -20,15 +14,11 @@
 
 
     <p>
-        <!-- label the input field -->
         <label>Kilograms</label>
-        <!-- input tag for enter the data -->
-        <!-- kiloweightConvert function call
-function kiloweightConvert to evaluate value-->
+
         <input id="Kilograms" type="number" placeholder="kilograms" oninput="kiloweightConvert(this.value)" onchange="kiloweightConvert(this.value)" />
     </p>
 
-    <!-- output field-->
 
     <p>Pounds: <span id="Pounds"></span></p>
 

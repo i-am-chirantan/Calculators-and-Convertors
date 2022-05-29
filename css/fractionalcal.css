@@ -1,55 +1,76 @@
 * {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow: auto;
 }
 
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-}
-
-.box_design {
-    color: rgb(0, 0, 0);
-    height: 40px;
-    background-color: rgba(255, 228, 196, 0.248);
-    border-color: #4d4e4e;
-    border-radius: 70px;
-    text-align: center;
+h1 {
+    color: #1793ff;
 }
 
 .container {
-    margin: 50px 50px;
-    text-align: left;
+    text-align: center;
+    width: 97%;
+    margin: 10px;
+    align-items: center;
+    text-align: center;
     border: 2px solid black;
     border-radius: 15px;
-    padding: 15px 15px 15px 45px;
+    padding: 10px;
+    overflow-wrap: break-word;
 }
 
-#a,
-#b,
-#c,
-#d {
-    width: 80%;
-    size: 50;
-    margin: 10px 10px 10px 10px;
+.calculator {
+    width: 70%;
+    background-color: beige;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px auto;
 }
 
-.calculate,
-.clear {
-    color: rgb(0, 0, 0);
-    width: 10%;
-    size: 50;
-    height: 40px;
-    background-color: rgba(255, 228, 196, 0.248);
-    border-color: #4d4e4e;
-    border-radius: 70px;
+output {
+    padding: 159px auto;
+    font-size: 24px;
     text-align: center;
-    margin: 10px 10px 10px 38px;
+    overflow-wrap: break-word;
+    width: 40%;
+    size: 50;
+    margin: 5px 5px;
 }
 
-.calculate:hover,
-.clear.calculate:hover {
-    background-color: blueviolet;
-    color: whitesmoke;
-    zoom: 1;
+table {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
+.box_design {
+    margin: 10px;
+    height: 25px;
+    border-radius: 15px;
+    border-color: transparent;
+    text-align: center;
+    font-size: 18px;
+}
+
+.calculate {
+    margin-left: auto;
+    margin-right: 5px;
+    height: 50px;
+    background-color: rgba(165, 247, 82, 0.784);
+    color: blue;
+}
+
+.clear {
+    height: 50px;
+    width: 60px;
+    background-color: rgba(247, 123, 82, 0.784);
+    color: rgb(253, 253, 253);
+    margin-left: 5px;
+}
+
+.sign {
+    height: 40px;
+    width: 60px;
+    text-align: center;
+    border-radius: 15px;
 }

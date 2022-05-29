@@ -3,12 +3,12 @@
     overflow: hidden;
 }
 
-#calculimg {
-    display: none;
-}
-
 h1 {
     color: #1793ff;
+}
+
+#calculimg {
+    display: none;
 }
 
 .container {

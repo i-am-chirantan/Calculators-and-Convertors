@@ -8,6 +8,8 @@
     <title>Fractional Calculator</title>
     <link rel="stylesheet" href="../css/fractionalcal.css">
     <link rel="stylesheet" href="../css/index.css">
+    <script src="../script/script.js"></script>
+    <script src="../script/fractionalcal.js"></script>
 </head>
 
 <body>
@@ -25,117 +27,116 @@
         </div>
     </div>
     <div class="container">
+        <div class="calculator">
 
-        <div>
-            <h1>Fraction Calculator</h1>
-            <p>
-                Below are multiple fraction calculators capable of addition, subtraction, multiplication, division, simplification, and conversion between fractions and decimals. Fields above the solid black line represent the numerator, while fields below represent
-                the denominator</p>
-            <table>
-                <tr>
-                    <td>
-                        <input type="number" id="a" class="box_design">
-                    </td>
-                    <td></td>
-                    <td></td>
-                    <td>
-                        <input type="number" id="b" class="box_design">
-                    </td>
-                    <td></td>
-                    <td> ?</td>
-                </tr>
-                <tr>
-                    <td>----------------------</td>
-                    <td></td>
-                    <!-- separator -->
+            <div class="fraction">
 
-                    <td>
+                <div>
+                    <h1>Fraction Calculator</h1>
+                    <p>
+                        Below are multiple fraction calculators capable of addition, subtraction, multiplication, division, simplification, and conversion between fractions and decimals. Fields above the solid black line represent the numerator, while fields below represent
+                        the denominator</p>
+                    <table class="tcenter">
+                        <tr>
+                            <td>
+                                <input type="number" id="a" class="box_design">
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <input type="number" id="b" class="box_design">
+                            </td>
+                            <td></td>
+                            <td> <output type="number" id="w1">?</output> </td>
+                        </tr>
+                        <tr>
+                            <td>----------------------</td>
+                            <td></td>
+                            <!-- separator -->
 
-                        <label for="sign"></label>
+                            <td>
 
-                        <select name="cars" id="sign">
-                    <option value="+">&#43;</option>
+                                <label for="sign"></label>
+
+                                <select name="symbol" class="sign" id="oper1">
+                            <option value="+">&#43;</option>
                     <option value="-">&#45;</option>
                     <option value="*">x</option>
                     <option value="/">&#47;</option>
                 </select></td>
 
-                    <td>----------------------</td>
-                    <td> = </td>
-                    <!-- separator -->
+                            <td>----------------------</td>
+                            <td> = </td>
+                            <!-- separator -->
 
-                    <td>----------</td>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="number" id="c" class="box_design">
-                    </td>
-                    <td></td>
-                    <td></td>
-                    <td>
-                        <input type="number" id="d" class="box_design">
-                    </td>
-                    <td></td>
-                    <td>?</td>
-                </tr>
-            </table>
-        </div>
-        <div>
-            <button type="submit" class="calculate box_design" onclick="calculate()">calculate</button>
-            <button type="reset" class="clear box_design">clear</button>
-            <div><output type="text" id="res" class="display-box"></output></div>
-        </div>
+                            <td>----------</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="number" id="c" class="box_design">
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <input type="number" id="d" class="box_design">
+                            </td>
+                            <td></td>
+                            <td> <output type="number" id="w2">?</output> </td>
 
-        <div>
-            <h1>Mixed Numbers Calculator</h1>
-            <table>
-                <tr>
-                    <td><input type="text" onclick="nmr()"></td>
-                    <td>
-                        <label for="sign"></label>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <output id="decimal"></output>
+                </div>
+                <div>
+                    <button type="submit" class="calculate box_design" onclick="submit1()">calculate</button>
+                    <button type="reset" class="clear box_design">clear</button>
+                </div>
 
-                        <select name="cars" id="symbol">
-                        <option value="+">&#43;</option>
-                        <option value="-">&#45;</option>
-                        <option value="*">x</option>
-                        <option value="/">&#47;</option>
-                    </select>
-                    </td>
-                    <td><input type="text" onclick="nmr()"></td>
-                    <td> = ? </td>
-                </tr>
-            </table>
-        </div>
-        <div>
-            <button type="submit" class="calculate box_design">calculate</button>
-            <button type="reset" class="clear box_design">clear</button>
-        </div>
-        <div>
-            <h1>Decimal to Fractional Calculator</h1>
-            <tr>
-                <td><input type="text" onclick="nmr()"></td>
-                <td> = ?/?</td>
-            </tr>
-        </div>
-        <div>
-            <button type="submit" class="calculate box_design">calculate</button>
-            <button type="reset" class="clear box_design">clear</button>
-        </div>
-        <div>
-            <h1>Fraction to Decimal Calculator</h1>
-            <table>
-                <tr>
-                    <td><input type="text" onclick="nmr()"></td>
-                </tr>
-                <tr>
-                    <td>------------</td>
-                    <td> = ? </td>
-                </tr>
-                <tr>
-                    <td><input type="text" onclick="nmr()"></td>
-                </tr>
+                <div class="dectofrac">
 
-            </table>
+                    <div>
+                        <h1>Decimal to Fraction Calculator</h1>
+                        <table class="tcenter">
+                            <tr>
+                                <td><input class="box_design" type="number" id="dec"></td>
+                                <td> <output type="number" id="y0"></output> </td>
+                                <td> <output type="number" id="y1">?</output> </td>
+                                <td>/</td>
+                                <td> <output type="number" id="y2">?</output> </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div>
+                        <button type="submit" class="calculate box_design" onclick="submit3()">calculate</button>
+                        <button type="reset" class="clear box_design">clear</button>
+                    </div>
+                </div>
+            </div>
+            <div class="fractodec">
+
+                <div>
+                    <h1>Fraction to Decimal Calculator</h1>
+                    <table class="tcenter">
+                        <tr>
+                            <td><input class="box_design" id="func1" type="number"></td>
+                        </tr>
+                        <tr>
+                            <td>------------</td>
+                            <td> <output type="number" id="z1">?</output> </td>
+                        </tr>
+                        <tr>
+                            <td><input type="number" class="box_design" id="func2"></td>
+                        </tr>
+
+                    </table>
+                </div>
+                <div>
+                    <button type="submit" class="calculate box_design" onclick="submit4()">calculate</button>
+                    <button type="reset" class="clear box_design">clear</button>
+                </div>
+            </div>
         </div>
     </div>
     <!-- end container -->
