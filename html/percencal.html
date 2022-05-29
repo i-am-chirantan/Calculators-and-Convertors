@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Percentage Calculator</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/common_style.css">
+    <link rel="stylesheet" href="../css/percencal.css">
+    <script src="../script/script.js"></script>
+    <script src="../script/percencal.js"></script>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="../index.html" target="_self">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">Calculators
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="../index.html" target="_self">Simple Calculator</a>
+                <a href="./scientific.html" target="_self">Scientific Calculator</a>
+                <a href="./fractionalcal.html" target="_self">Fractional Calculator</a>
+                <a href="./percencal.html" target="_self">Percentage Calculator</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Others
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="./html/about.html" target="_self">About</a>
+                <a href="./html/contact.html" target="_self">Contact</a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="calculator">
+            <h1>Percentage Calculator</h1>
+            <table>
+                <tr>
+                    <td>
+                        <input type="number" class="box_design" id="I0">% of
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <input type="number" class="box_design" id="I1"> =
+                    </td>
+                    <td></td>
+                    <td> <output type="numbers" id="out1">?</output></td>
+                </tr>
+            </table>
+            <div><button type="submit" class="box_design calculate" onclick="calc1()">calculate</button>
+                <button type="reset" class="box_design clear" onclick="clrall('I0','I1'); clrall('I0','out1')">clear</button>
+            </div>
+            <h1>Percentage Difference Calculator</h1>
+            <table>
+                <tr>
+                    <td>
+                        value 1: <input type="number" class="box_design" id="I2">
+                    </td>
+                </tr>
+                <tr>
+                    <td>value 2: <input type="number" class="box_design" id="I3"></td>
+                </tr>
+                <tr>
+                    <td> <output type="numbers" id="out2">?</output></td>
+                </tr>
+            </table>
+            <div><button type="submit" class="box_design calculate" onclick="calc2()">calculate</button>
+                <button type="reset" class="box_design clear" onclick="clrall('I2','I3'); clrall('I2','out2')">clear</button>
+                <h1>Percentage Change Calculator</h1>
+                <table>
+                    <tr>
+                        <td><input type="number" class="box_design" id="I4"></td>
+                        <td>
+                            <label for="change"></label>
+
+                            <select name="cars" class="sign" id="cars">
+                    <option value="+">increase</option>
+                    <option value="-">decrease</option>
+                </select>
+                        </td>
+                        <td><input type="numbers" class="box_design" id="I5">% = </td>
+                        <td> <output type="numbers" id="out3">?</output></td>
+                    </tr>
+                </table>
+                <div><button type="submit" class="box_design calculate" onclick="calc3()">calculate</button>
+                    <button type="reset" class="box_design clear" onclick="clrall('I4','I5'); clrall('I5','out3')">clear</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

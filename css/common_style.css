@@ -1,0 +1,91 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow: auto;
+}
+
+h1 {
+    color: #1793ff;
+}
+
+.container {
+    text-align: center;
+    width: 97%;
+    margin: 10px;
+    align-items: center;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 10px;
+    overflow-wrap: break-word;
+}
+
+.calculator {
+    width: 70%;
+    background-color: rgb(255, 214, 51);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px auto;
+}
+
+output {
+    padding: 159px auto;
+    font-size: 24px;
+    text-align: center;
+    overflow-wrap: break-word;
+    width: 40%;
+    size: 50;
+    margin: 5px 5px;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
+.box_design {
+    margin: 10px;
+    height: 25px;
+    border-radius: 15px;
+    border-color: transparent;
+    text-align: center;
+    font-size: 18px;
+}
+
+.calculate {
+    margin-left: auto;
+    margin-right: 5px;
+    height: 50px;
+    background-color: rgba(165, 247, 82, 0.784);
+    color: blue;
+    width: 20%;
+}
+
+.clear {
+    height: 50px;
+    width: 60px;
+    background-color: rgba(247, 123, 82, 0.784);
+    color: rgb(253, 253, 253);
+    margin-left: 5px;
+    width: 20%;
+}
+
+.sign {
+    height: 10%;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+}
+
+.calculate:hover {
+    color: rgb(21, 5, 5);
+    background-color: rgb(81, 255, 0);
+}
+
+.clear:hover {
+    color: rgb(21, 5, 5);
+    background-color: rgb(255, 0, 0);
+}

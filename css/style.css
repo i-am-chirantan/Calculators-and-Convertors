@@ -1,26 +1,10 @@
 * {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    overflow: hidden;
+    overflow: auto;
 }
 
 #calculimg {
     display: none;
-}
-
-.container {
-    margin: 10px;
-    align-items: center;
-    text-align: center;
-    border: 2px solid black;
-    border-radius: 15px;
-    padding: 10px;
-    background-size: 550px;
-    background-repeat: no-repeat;
-    overflow-wrap: break-word;
-}
-
-h1 {
-    color: #1793ff;
 }
 
 #userinput {
@@ -29,8 +13,8 @@ h1 {
     align-items: center;
     size: 50;
     height: 40px;
-    background-color: rgba(255, 228, 196, 0.248);
-    border-color: #4d4e4e;
+    background-color: white;
+    border-color: none;
     border-radius: 70px;
     text-align: center;
     margin: 10px 10px 10px 10px;
@@ -42,12 +26,6 @@ h1 {
     color: rgb(0, 0, 0);
     width: 80%;
     size: 50;
-}
-
-.calculator {
-    margin-top: 20px auto;
-    align-items: center;
-    height: fit-content;
 }
 
 .btn1,

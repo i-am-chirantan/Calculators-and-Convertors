@@ -16,8 +16,8 @@ function nmr(val, input) {
 }
 
 function clrall(input, output) {
-    document.getElementById(input).value = "";
-    document.getElementById(output).value = "";
+    document.getElementById(input).value = "?";
+    document.getElementById(output).value = "?";
 }
 
 function back(input) {

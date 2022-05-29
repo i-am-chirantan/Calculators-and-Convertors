@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/common_style.css">
     <script src="https://unpkg.com/mathjs/lib/browser/math.js"></script>
     <script src="./script/script.js"></script>
     <script src="./script/scientific.js"></script>
@@ -18,27 +19,36 @@
     <div class="navbar">
         <a href="index.html" target="_self">Home</a>
         <div class="dropdown">
-            <button class="dropbtn">Math
-        <i class="fa fa-caret-down"></i>
-      </button>
+            <button class="dropbtn">Calculators
+                <i class="fa fa-caret-down"></i>
+            </button>
             <div class="dropdown-content">
+                <a href="index.html" target="_self">Simple Calculator</a>
                 <a href="./html/scientific.html" target="_self">Scientific Calculator</a>
-                <a href="./html/weightconver.html" target="_self">Weight Convertor</a>
                 <a href="./html/fractionalcal.html" target="_self">Fractional Calculator</a>
+                <a href="./html/percencal.html" target="_self">Percentage Convertor</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Others
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="./html/about.html" target="_self">About</a>
+                <a href="./html/contact.html" target="_self">Contact</a>
             </div>
         </div>
     </div>
 
     <div class="container">
-        <h1>Calculator</h1>
-        <img src="./img/calculpic.png" id="calculimg" alt="" srcset="">
-        <br>
-        <div><input type="text" id="userinput" class="display-box"></div>
-        <br>
-        <div><output type="text" id="res" class="display-box"></output></div>
-        <br>
-
         <div class="calculator">
+            <h1>Calculator</h1>
+            <img src="./img/calculpic.png" id="calculimg" alt="" srcset="">
+            <br>
+            <div><input type="text" id="userinput" class="display-box"></div>
+            <br>
+            <div><output type="text" id="res" class="display-box"></output></div>
+            <br>
 
             <input type="button" class="btn1" value="C" onclick="clrall('userinput','res')" />
             <input type="button" class="btn-grey" value="&#8592;" onclick="back('userinput')" />

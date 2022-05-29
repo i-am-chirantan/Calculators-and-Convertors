@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scientific Calculator</title>
     <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/common_style.css">
     <link rel=" stylesheet " href="../css/scientifc.css " type="text/css ">
     <script src="../script/script.js "></script>
     <script src="../script/scientific.js"></script>
@@ -15,23 +16,33 @@
 
 
 <body>
-    <div class="navbar ">
-        <a href="../index.html" target="_self ">Home</a>
-        <div class="dropdown ">
-            <button class="dropbtn ">Math
-        <i class="fa fa-caret-down "></i>
-      </button>
-            <div class="dropdown-content ">
-                <a href="./scientific.html " target="_self ">Scientific Calculator</a>
-                <a href="./weightconver.html " target="_self ">Weight Convertor</a>
-                <a href="./fractionalcal.html " target="_self ">Fractional Calculator</a>
+    <div class="navbar">
+        <a href="../index.html" target="_self">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">Calculators
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="../index.html" target="_self">Simple Calculator</a>
+                <a href="./scientific.html" target="_self">Scientific Calculator</a>
+                <a href="./fractionalcal.html" target="_self">Fractional Calculator</a>
+                <a href="./percencal.html" target="_self">Percentage Calculator</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Others
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="./html/about.html" target="_self">About</a>
+                <a href="./html/contact.html" target="_self">Contact</a>
             </div>
         </div>
     </div>
     <div class="container">
-        <h1>Scientific Calculator</h1>
-        <img src="../img/calculpic.png" id="calculimg" alt="" srcset="">
         <div class="calculator">
+            <h1>Scientific Calculator</h1>
+            <img src="../img/calculpic.png" id="calculimg" alt="" srcset="">
             <input type="text" id="screen" maxlength="20">
             <br>
             <output type="text" id="result"></output>
@@ -39,42 +50,42 @@
 
 
                 <div class="functions-one ">
-                    <button class="triggers" onclick="clrall( 'screen', 'result') ">C</button>
-                    <button class="triggers" onclick="back( 'screen') ">&#8592</button>
-                    <button class="basic-stuff" onclick="nmr( '&#40', 'screen') ">(</button>
-                    <button class="basic-stuff" onclick="nmr( '&#41', 'screen') ">)</button>
-                    <button class="numbers" id="no9" onclick="nmr( '9', 'screen') ">9</button>
-                    <button class="numbers" id="no8" onclick="nmr( '8', 'screen') ">8</button>
-                    <button class="numbers" id="no7" onclick="nmr( '7', 'screen') ">7</button>
-                    <button class="numbers" id="no6" onclick="nmr( '6', 'screen') ">6</button>
-                    <button class="numbers" id="no5" onclick="nmr( '5', 'screen') ">5</button>
-                    <button class="numbers" id="no4" onclick="nmr( '4', 'screen') ">4</button>
-                    <button class="numbers" id="no3" onclick="nmr( '3', 'screen') ">3</button>
-                    <button class="numbers" id="no2" onclick="nmr( '2', 'screen') ">2</button>
-                    <button class="numbers" id="no1" onclick="nmr( '1', 'screen') ">1</button>
-                    <button class="numbers" id="no0" onclick="nmr( '0', 'screen') ">0</button>
+                    <button class="triggers all" onclick="clrall( 'screen', 'result') ">C</button>
+                    <button class="triggers all" onclick="back( 'screen') ">&#8592</button>
+                    <button class="basic-stuff all" onclick="nmr( '&#40', 'screen') ">(</button>
+                    <button class="basic-stuff all" onclick="nmr( '&#41', 'screen') ">)</button>
+                    <button class="numbers all" id="no9" onclick="nmr( '9', 'screen') ">9</button>
+                    <button class="numbers all" id="no8" onclick="nmr( '8', 'screen') ">8</button>
+                    <button class="numbers all" id="no7" onclick="nmr( '7', 'screen') ">7</button>
+                    <button class="numbers all" id="no6" onclick="nmr( '6', 'screen') ">6</button>
+                    <button class="numbers all" id="no5" onclick="nmr( '5', 'screen') ">5</button>
+                    <button class="numbers all" id="no4" onclick="nmr( '4', 'screen') ">4</button>
+                    <button class="numbers all" id="no3" onclick="nmr( '3', 'screen') ">3</button>
+                    <button class="numbers all" id="no2" onclick="nmr( '2', 'screen') ">2</button>
+                    <button class="numbers all" id="no1" onclick="nmr( '1', 'screen') ">1</button>
+                    <button class="numbers all" id="no0" onclick="nmr( '0', 'screen') ">0</button>
                 </div>
 
                 <div class="functions-two">
 
-                    <button class="basic-stuff" onclick="nmr( '+', 'screen') ">+</button>
-                    <button class="basic-stuff" onclick="nmr( '-', 'screen') ">-</button>
-                    <button class="complex-stuff" onclick="nmr( 'abs&#40', 'screen') ">|x|</button>
-                    <button class="basic-stuff" onclick="nmr( '*', 'screen') ">*</button>
-                    <button class="basic-stuff" onclick="nmr( '/', 'screen') ">/</button>
-                    <button class="complex-stuff" onclick="nmr( '*1/', 'screen') ">1/x</button>
-                    <button class="complex-stuff" onclick="nmr( '%', 'screen') ">%</button>
-                    <button class="complex-stuff" onclick="nmr( '^&#40', 'screen') ">x^y</button>
-                    <button class="complex-stuff" onclick="nmr( '!', 'screen') ">!</button>
-                    <button class="complex-stuff" onclick="nmr( '^&#40 2&#41', 'screen') ">x²</button>
-                    <button class="complex-stuff" onclick="nmr( 'sin&#40', 'screen') ">sin</button>
-                    <button class="complex-stuff" onclick="nmr( 'cos&#40', 'screen') ">cos</button>
-                    <button class="complex-stuff" onclick="nmr( 'sqrt &#40', 'screen') ">√</button>
-                    <button class="complex-stuff" onclick="nmr( 'tan&#40', 'screen') ">tan</button>
-                    <button class="complex-stuff" onclick="nmr( 'log&#40', 'screen') ">log</button>
-                    <button class="triggers" id="equal" onclick="output('screen','result') "> =</button>
-                    <button class="basic-stuff" onclick=" nmr( '.', 'screen') ">.</button>
-                    <button class="complex-stuff" onclick="nmr( 'pi', 'screen') ">π</button>
+                    <button class="basic-stuff all" onclick="nmr( '+', 'screen') ">+</button>
+                    <button class="basic-stuff all" onclick="nmr( '-', 'screen') ">-</button>
+                    <button class="complex-stuff all" onclick="nmr( 'abs&#40', 'screen') ">|x|</button>
+                    <button class="basic-stuff all" onclick="nmr( '*', 'screen') ">*</button>
+                    <button class="basic-stuff all" onclick="nmr( '/', 'screen') ">/</button>
+                    <button class="complex-stuff all" onclick="nmr( '*1/', 'screen') ">1/x</button>
+                    <button class="complex-stuff all" onclick="nmr( '%', 'screen') ">%</button>
+                    <button class="complex-stuff all" onclick="nmr( '^&#40', 'screen') ">x^y</button>
+                    <button class="complex-stuff all" onclick="nmr( '!', 'screen') ">!</button>
+                    <button class="complex-stuff all" onclick="nmr( '^&#40 2&#41', 'screen') ">x²</button>
+                    <button class="complex-stuff all" onclick="nmr( 'sin&#40', 'screen') ">sin</button>
+                    <button class="complex-stuff all" onclick="nmr( 'cos&#40', 'screen') ">cos</button>
+                    <button class="complex-stuff all" onclick="nmr( 'sqrt &#40', 'screen') ">√</button>
+                    <button class="complex-stuff all" onclick="nmr( 'tan&#40', 'screen') ">tan</button>
+                    <button class="complex-stuff all" onclick="nmr( 'log&#40', 'screen') ">log</button>
+                    <button class="triggers all" id="equal" onclick="output('screen','result') "> =</button>
+                    <button class="basic-stuff all" onclick=" nmr( '.', 'screen') ">.</button>
+                    <button class="complex-stuff all" onclick="nmr( 'pi', 'screen') ">π</button>
                 </div>
             </div>
         </div>
