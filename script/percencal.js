@@ -6,6 +6,7 @@ function calc1() {
         return;
     }
     document.getElementById("out1").innerHTML = a * b / 100;
+    document.getElementById("out1").style.color = "white";
 }
 
 function calc2() {
@@ -20,6 +21,7 @@ function calc2() {
     percent = (abs(c - d) * 100) / d;
     console.log(percent);
     document.getElementById("out2").innerHTML = c + " is " + percent + " % " + " of " + d;
+    document.getElementById("out2").style.color = "white";
 }
 
 function calc3() {
@@ -30,13 +32,13 @@ function calc3() {
         alert("Please fill in all the fields");
         return;
     }
-    if (c == "+") { // 5 100
+    if (c == "+") {
         var res = (+b + +parseFloat((a * 100) / b));
     } else {
         var res = +b - +parseFloat((a * 100) / b);
     }
-    console.log(typeof(res));
     document.getElementById("out3").innerHTML = res;
+    document.getElementById("out3").style.color = "white";
 }
 
 function max(a, b) {

@@ -4,7 +4,15 @@
 }
 
 h1 {
-    color: #1793ff;
+    color: #17ff64;
+}
+
+.sign {
+    color: black;
+}
+
+body {
+    background-color: #1793ff;
 }
 
 .container {
@@ -13,18 +21,22 @@ h1 {
     margin: 10px;
     align-items: center;
     text-align: center;
-    border: 2px solid black;
+    border-color: rgba(255, 255, 255, 0.526);
     border-radius: 15px;
     padding: 10px;
     overflow-wrap: break-word;
+    background-color: rgba(255, 255, 255, 0.417);
 }
 
 .calculator {
     width: 70%;
-    background-color: rgb(255, 214, 51);
     padding: 20px;
     border-radius: 10px;
     margin: 10px auto;
+    background-image: url("../img/test2bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
 }
 
 output {
@@ -64,7 +76,7 @@ table {
 .clear {
     height: 50px;
     width: 60px;
-    background-color: rgba(247, 123, 82, 0.784);
+    background-color: rgba(122, 70, 52, 0.784);
     color: rgb(253, 253, 253);
     margin-left: 5px;
     width: 20%;

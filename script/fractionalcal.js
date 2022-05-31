@@ -55,12 +55,12 @@ function submit3() {
         var f = Math.trunc(num / denom);
         num = num - (f * denom);
         document.getElementById("y0").value = f;
-        document.getElementById("y0").style.color = "Green";
+        document.getElementById("y0").style.color = "White";
     }
     document.getElementById("y1").value = num;
-    document.getElementById("y1").style.color = "Green";
+    document.getElementById("y1").style.color = "White";
     document.getElementById("y2").value = denom;
-    document.getElementById("y2").style.color = "Green";
+    document.getElementById("y2").style.color = "White";
 }
 
 function submit4() {
@@ -78,7 +78,7 @@ function submit4() {
         document.getElementById("w1").style.color = "red";
     }
     document.getElementById("z1").value = a / b;
-    document.getElementById("z1").style.color = "Green";
+    document.getElementById("z1").style.color = "White";
 }
 
 function gcd(a, b) {
@@ -93,8 +93,9 @@ function fill1(num, denom) {
     num = num / k;
     denom = denom / k;
     document.getElementById("decimal").value = "Result in Decimal=" + (num / denom);
+    document.getElementById("decimal").style.color = "White";
     document.getElementById("w1").value = num;
-    document.getElementById("w1").style.color = "Green";
+    document.getElementById("w1").style.color = "White";
     document.getElementById("w2").value = denom;
-    document.getElementById("w2").style.color = "Green";
+    document.getElementById("w2").style.color = "White";
 }

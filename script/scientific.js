@@ -5,7 +5,7 @@ function output(x, y) {
     try {
 
         document.getElementById(y).innerHTML = math.evaluate(k);
-        document.getElementById(y).style.color = "green";
+        document.getElementById(y).style.color = "white";
     } catch (err) {
         error();
     }
