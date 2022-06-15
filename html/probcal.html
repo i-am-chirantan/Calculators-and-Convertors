@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fractional Calculator</title>
+    <title>Probability and Statistics Calculator</title>
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/common_style.css">
-    <link rel="stylesheet" href="../css/fractionalcal.css">
+    <link rel="stylesheet" href="../css/probcal.css">
     <script src="../script/script.js"></script>
-    <script src="../script/fractionalcal.js"></script>
+    <script src="../script/probcal.js"></script>
 </head>
 
 <body>
@@ -41,33 +41,48 @@
     <div class="container">
         <div class="calculator">
 
-            <div class="fraction">
+            <div class="probcal">
 
                 <div>
                     <h1>Probability and Statistics Calculator</h1>
                     <p>Calculate Mean Median Mode Standard-Deviation and Variance</p>
+                    <input type="text" class="box_design" id="inputnos">
+                    <div>
+                        <button type="submit" class="calculate box_design" onclick="output()">calculate</button>
+                        <button type="reset" class="clear box_design" onclick="clrall('inputnos','mean'); clrall('median','mode'); clrall('sd','vari')">clear</button>
+                    </div>
                     <table class="tcenter">
-
-                        <td>
-                            <input type="text" id="a" class="box_design">
-                        </td>
                         <tr>
-                            <td> <output type="number" id="w1">?</output> </td>
+                            <td>
+                                <h1>Mean</h1>
+                                <output type="number" id="mean"></output>
+                            </td>
                         </tr>
                         <tr>
-                            <td> <output type="number" id="w2">?</output> </td>
+                            <td>
+                                <h1>Median</h1>
+                                <output type="number" id="median"></output>
+                            </td>
                         </tr>
                         <tr>
-                            <td> <output type="number" id="w3">?</output> </td>
+                            <td>
+                                <h1>Mode</h1>
+                                <output type="number" id="mode"></output>
+                            </td>
                         </tr>
                         <tr>
-                            <td> <output type="number" id="w4">?</output> </td>
+                            <td>
+                                <h1>Standard-Deviation</h1>
+                                <output type="number" id="sd"></output>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h1>Variance</h1>
+                                <output type="number" id="vari"></output>
+                            </td>
                         </tr>
                     </table>
-                    <div>
-                        <button type="submit" class="calculate box_design" onclick="submit4()">calculate</button>
-                        <button type="reset" class="clear box_design" onclick="clrall('func1','z1'); clrall('func2','z1');">clear</button>
-                    </div>
                 </div>
             </div>
         </div>
