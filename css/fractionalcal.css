@@ -1,5 +1,11 @@
 p {
-    color: rgba(255, 255, 0, 0.675);
+    color: rgba(60, 35, 7, 0.675);
+    font-size: 18px;
+    font-style: bold;
+}
+
+.signop {
+    border-radius: 15px;
 }
 
 @media screen and (max-width: 1080px) {

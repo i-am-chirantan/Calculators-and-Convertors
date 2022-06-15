@@ -3,8 +3,13 @@
     overflow: auto;
 }
 
+.calculimg {
+    display: none;
+}
+
 h1 {
-    color: #17ff64;
+    color: #9fe5ad;
+    text-shadow: 1px 1px 10px #0000007f;
 }
 
 .sign {
@@ -26,6 +31,11 @@ body {
     padding: 10px;
     overflow-wrap: break-word;
     background-color: rgba(255, 255, 255, 0.417);
+    box-shadow: 0px 0px 15px #0000007f;
+}
+
+#userinput {
+    width: 45%;
 }
 
 .calculator {
@@ -33,18 +43,17 @@ body {
     padding: 20px;
     border-radius: 10px;
     margin: 10px auto;
-    background-image: url("../img/test2bg.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-blend-mode: overlay;
+    background-color: #ec8aa9;
+    box-shadow: 0px 0px 15px #0000007f;
 }
 
 output {
     padding: 159px auto;
     font-size: 24px;
     text-align: center;
-    overflow-wrap: break-word;
-    width: 40%;
+    overflow-x: scroll;
+    width: 2px;
+    border-color: bisque;
     size: 50;
     margin: 5px 5px;
 }
@@ -62,6 +71,7 @@ table {
     border-color: transparent;
     text-align: center;
     font-size: 18px;
+    box-shadow: 0px 0px 15px #0000007f;
 }
 
 .calculate {
@@ -71,6 +81,7 @@ table {
     background-color: rgba(165, 247, 82, 0.784);
     color: blue;
     width: 20%;
+    box-shadow: 0px 0px 15px #0000007f;
 }
 
 .clear {
@@ -80,24 +91,82 @@ table {
     color: rgb(253, 253, 253);
     margin-left: 5px;
     width: 20%;
+    box-shadow: 0px 0px 15px #0000007f;
 }
 
 .sign {
     height: 10%;
     width: auto;
-    margin-left: auto;
-    margin-right: auto;
     border-radius: 10px;
     border: none;
+    padding: 3px;
+    font-size: 20px;
     text-align: center;
 }
 
 .calculate:hover {
     color: rgb(21, 5, 5);
-    background-color: rgb(81, 255, 0);
+    background-color: rgb(98, 173, 63);
 }
 
 .clear:hover {
     color: rgb(21, 5, 5);
-    background-color: rgb(255, 0, 0);
+    background-color: rgb(87, 152, 221);
+}
+
+.btn1,
+.btn-grey {
+    background-color: #bdbdbd;
+    color: rgb(0, 0, 0);
+    height: 45px;
+    width: 55px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 12px 10px;
+    cursor: pointer;
+    border-radius: 40%;
+    border: transparent;
+    box-shadow: 0px 0px 12px #000000c8;
+}
+
+.btn1:hover,
+.btn-grey:hover {
+    box-shadow: 3px 3px #25410add;
+    background-color: rgba(255, 248, 123, 0.814);
+    transform: scale(1.2);
+    border-radius: 300px;
+    box-shadow: 0px 0px 10px #000000c8;
+}
+
+@media(max-width:453px) {
+    #userinput {
+        margin: 2px;
+        width: 85%;
+        size: 50;
+        text-align: center;
+    }
+}
+
+@media(max-width:433px) {
+    h1 {
+        display: none;
+    }
+    @media(max-width:418px) {
+        .calculimg {
+            display: inline-block;
+            height: 5em;
+            width: auto;
+        }
+        h1 {
+            display: none;
+        }
+    }
+    .btn1,
+    .btn-grey {
+        height: 3em;
+        width: 3em;
+        text-align: center;
+        font-size: 93%;
+    }
 }
