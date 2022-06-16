@@ -1,8 +1,10 @@
 function output() {
     var input = document.getElementById("inputnos").value;
     data = validity(input);
-    console.log(data);
-    if (data == "Invalid") {
+    if (!Array.isArray(data)) {
+        document.getElementById("out").innerHTML = data;
+        document.getElementById("out").style.color = "red";
+        document.getElementById("out").style.background = "white";
         return;
     }
     var res = mean(data);
@@ -24,15 +26,11 @@ function output() {
 function validity(input) {
     var data = input.split(",");
     if (data.length < 2) {
-        alert("Please enter at least two numbers");
-        console.log("Please enter at least two numbers");
-        return "Invalid";
+        return "Please enter at least two numbers";
     }
     for (i = 0; i < data.length; i++) {
         if (isNaN(data[i])) {
-            alert("Please enter valid numbers");
-            console.log("Please enter valid numbers");
-            return "Invalid";
+            return "Please enter valid numbers";
         } else {
             data[i] = parseInt(data[i]);
         }

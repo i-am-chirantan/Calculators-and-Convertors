@@ -1,3 +1,53 @@
 output {
     color: white;
 }
+
+@media screen and (max-width: 1080px) {
+    * {
+        overflow: auto;
+    }
+    .box_design {
+        width: 60%;
+    }
+    .calculate {
+        width: 20%;
+    }
+    .clear {
+        width: 20%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    * {
+        overflow: auto;
+    }
+    .calculate,
+    .clear {
+        font-size: 100%;
+        padding: 0px;
+    }
+    .calculate {
+        width: 80%;
+    }
+    h1 {
+        font-size: 120%;
+    }
+}
+
+@media screen and (max-width: 438px) {
+    * {
+        overflow: auto;
+    }
+    .calculate,
+    .clear {
+        font-size: 80%;
+        padding: 0px;
+    }
+    .calculate {
+        width: 60%;
+    }
+    h1 {
+        font-size: 80%;
+        display: inline-block;
+    }
+}

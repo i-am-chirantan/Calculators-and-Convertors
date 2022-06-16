@@ -48,7 +48,8 @@ h1 {
 
 @media(max-width:600px) {
     .container {
-        overflow: scroll;
+        overflow: hidden;
+        width: 80%;
         height: fit-content;
     }
 }

@@ -93,25 +93,16 @@ output {
 }
 
 @media(max-width:590px) {
-    button {
+    .all {
         width: 70px;
         height: 39px;
-        margin: 2px;
+        margin: 7px;
     }
     .functions-one {
         width: 650px;
     }
     .functions-two {
         width: 500px;
-    }
-}
-
-@media(max-width:640px) {
-    input {
-        width: 80%;
-        align-self: center;
-        margin-left: 3px;
-        margin-right: 3px;
     }
 }
 

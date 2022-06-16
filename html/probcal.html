@@ -49,9 +49,14 @@
                     <input type="text" class="box_design" id="inputnos">
                     <div>
                         <button type="submit" class="calculate box_design" onclick="output()">calculate</button>
-                        <button type="reset" class="clear box_design" onclick="clrall('inputnos','mean'); clrall('median','mode'); clrall('sd','vari')">clear</button>
+                        <button type="reset" class="clear box_design" onclick="clrall('inputnos','mean'); clrall('median','mode'); clrall('sd','vari'); clrall('mean','out')">clear</button>
                     </div>
                     <table class="tcenter">
+                        <tr>
+                            <td>
+                                <output type="text" id="out"></output>
+                            </td>
+                        </tr>
                         <tr>
                             <td>
                                 <h1>Mean</h1>
