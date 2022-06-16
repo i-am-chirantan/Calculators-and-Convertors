@@ -46,7 +46,7 @@
                 <div>
                     <h1>Probability and Statistics Calculator</h1>
                     <p>Calculate Mean Median Mode Standard-Deviation and Variance</p>
-                    <input type="text" class="box_design" id="inputnos">
+                    <input type="text" class="box_design" id="inputnos" placeholder="Numbers sep by commas">
                     <div>
                         <button type="submit" class="calculate box_design" onclick="output()">calculate</button>
                         <button type="reset" class="clear box_design" onclick="clrall('inputnos','mean'); clrall('median','mode'); clrall('sd','vari'); clrall('mean','out')">clear</button>
@@ -60,31 +60,41 @@
                         <tr>
                             <td>
                                 <h1>Mean</h1>
-                                <output type="number" id="mean"></output>
+                                <span class="text">
+                                    <output type="number" id="mean"></output>
+                                </span>
                             </td>
                         </tr>
                         <tr>
                             <td>
                                 <h1>Median</h1>
-                                <output type="number" id="median"></output>
+                                <span class="text">
+                                    <output type="number" id="median"></output>
+                                </span>
                             </td>
                         </tr>
                         <tr>
                             <td>
                                 <h1>Mode</h1>
-                                <output type="number" id="mode"></output>
+                                <span class="text">
+                                    <output type="number" id="mode"></output>
+                                </span>
                             </td>
                         </tr>
                         <tr>
                             <td>
                                 <h1>Standard-Deviation</h1>
-                                <output type="number" id="sd"></output>
+                                <span class="text">
+                                    <output type="number" id="sd"></output>
+                                </span>
                             </td>
                         </tr>
                         <tr>
                             <td>
                                 <h1>Variance</h1>
-                                <output type="number" id="vari"></output>
+                                <span class="text">
+                                    <output type="number" id="vari"></output>
+                                </span>
                             </td>
                         </tr>
                     </table>

@@ -2,6 +2,12 @@ output {
     color: white;
 }
 
+::placeholder {
+    color: rgb(117, 117, 130);
+    font-size: 75%;
+    overflow: auto;
+}
+
 @media screen and (max-width: 1080px) {
     * {
         overflow: auto;
@@ -47,7 +53,7 @@ output {
         width: 60%;
     }
     h1 {
-        font-size: 80%;
+        font-size: 120%;
         display: inline-block;
     }
 }
