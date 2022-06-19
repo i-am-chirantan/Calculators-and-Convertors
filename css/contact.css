@@ -4,3 +4,22 @@
     justify-content: space-evenly;
     align-items: left;
 }
+
+textarea {
+    padding: 20px;
+    border-radius: 10px;
+    margin: 5px;
+    font-size: 18px;
+    border-color: transparent;
+    box-shadow: 0px 0px 15px #0000007f;
+    background-color: rgba(255, 255, 255, 0.655);
+}
+
+.btn {
+    background-color: rgb(239, 207, 42);
+    color: brown;
+}
+
+::placeholder {
+    font-size: 20px;
+}
