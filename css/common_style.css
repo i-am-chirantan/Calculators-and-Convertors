@@ -1,6 +1,7 @@
 * {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     overflow: auto;
+    text-align: center;
 }
 
 .calculimg {
@@ -53,6 +54,7 @@ output {
     text-align: center;
     text-overflow: scroll;
     border-color: bisque;
+    color: black;
     size: 50%;
     display: inline;
     width: 100%;
@@ -151,25 +153,57 @@ table {
     }
 }
 
-@media(max-width:433px) {
+::placeholder {
+    color: rgb(117, 117, 130);
+    font-size: 75%;
+    overflow: auto;
+}
+
+@media screen and (max-width: 1080px) {
+    * {
+        overflow: auto;
+    }
+    .box_design {
+        width: 60%;
+    }
+    .calculate {
+        width: 20%;
+    }
+    .clear {
+        width: 20%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    * {
+        overflow: auto;
+    }
+    .calculate,
+    .clear {
+        font-size: 100%;
+        padding: 0px;
+    }
+    .calculate {
+        width: 80%;
+    }
     h1 {
-        display: none;
+        font-size: 120%;
     }
-    @media(max-width:418px) {
-        .calculimg {
-            display: inline-block;
-            height: 5em;
-            width: auto;
-        }
-        h1 {
-            display: none;
-        }
+}
+
+@media screen and (max-width: 436px) {
+    * {
+        overflow: auto;
     }
-    .btn1,
-    .btn-grey {
-        height: 3em;
-        width: 3em;
-        text-align: center;
-        font-size: 93%;
+    .calculate,
+    .clear {
+        font-size: 90%;
+        padding: 0px;
+    }
+    .calculate {
+        width: 70%;
+    }
+    h1 {
+        font-size: 90%;
     }
 }

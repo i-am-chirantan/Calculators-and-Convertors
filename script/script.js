@@ -16,9 +16,10 @@ function nmr(val, input) {
 
 }
 
-function clrall(input, val) {
+function clrall(input, val, bgcolor = "white") {
     document.getElementById(input).value = val;
     document.getElementById(input).style.color = "black";
+    document.getElementById(input).style.backgroundColor = bgcolor;
 }
 
 function back(input) {

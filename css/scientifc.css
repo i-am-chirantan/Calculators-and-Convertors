@@ -118,3 +118,26 @@ output {
         overflow-y: scroll;
     }
 }
+
+@media(max-width:433px) {
+    h1 {
+        display: none;
+    }
+    @media(max-width:418px) {
+        .calculimg {
+            display: inline-block;
+            height: 5em;
+            width: auto;
+        }
+        h1 {
+            display: none;
+        }
+    }
+    .btn1,
+    .btn-grey {
+        height: 3em;
+        width: 3em;
+        text-align: center;
+        font-size: 93%;
+    }
+}
