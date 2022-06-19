@@ -50,19 +50,17 @@
                     <input type="text" class="box_design" id="inputnos" placeholder="Numbers sep by commas">
                     <div>
                         <button type="submit" class="calculate box_design" onclick="output()">calculate</button>
-                        <button type="reset" class="clear box_design" onclick="clrall('inputnos','mean'); clrall('median','mode'); clrall('sd','vari'); clrall('mean','out')">clear</button>
+                        <button type="reset" class="clear box_design" onclick="clrall('inputnos',''); clrall('mean','?'); clrall('median','?'); clrall('mode','?');clrall('sd','?'); clrall('vari','?'); clrall('out','');">clear</button>
                     </div>
                     <table class="tcenter">
                         <tr>
-                            <td>
-                                <output type="text" id="out"></output>
-                            </td>
-                        </tr>
-                        <tr>
+                            <span class="text">
+                                    <output type="number" id="out"></output>
+                                </span>
                             <td>
                                 <h1>Mean</h1>
                                 <span class="text">
-                                    <output type="number" id="mean"></output>
+                                    <output type="number" id="mean">?</output>
                                 </span>
                             </td>
                         </tr>
@@ -70,7 +68,7 @@
                             <td>
                                 <h1>Median</h1>
                                 <span class="text">
-                                    <output type="number" id="median"></output>
+                                    <output type="number" id="median">?</output>
                                 </span>
                             </td>
                         </tr>
@@ -78,7 +76,7 @@
                             <td>
                                 <h1>Mode</h1>
                                 <span class="text">
-                                    <output type="number" id="mode"></output>
+                                    <output type="number" id="mode">?</output>
                                 </span>
                             </td>
                         </tr>
@@ -86,7 +84,7 @@
                             <td>
                                 <h1>Standard-Deviation</h1>
                                 <span class="text">
-                                    <output type="number" id="sd"></output>
+                                    <output type="number" id="sd">?</output>
                                 </span>
                             </td>
                         </tr>
@@ -94,7 +92,7 @@
                             <td>
                                 <h1>Variance</h1>
                                 <span class="text">
-                                    <output type="number" id="vari"></output>
+                                    <output type="number" id="vari">?</output>
                                 </span>
                             </td>
                         </tr>

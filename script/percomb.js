@@ -5,8 +5,10 @@ function calc1() {
     if (n <= -1 || r <= -1) {
         document.getElementById("perm").value = "Invalid input";
         document.getElementById("perm").style.color = "red";
+        document.getElementById("perm").style.backgroundColor = "white";
         document.getElementById("comb").value = "Invalid input";
         document.getElementById("comb").style.color = "red";
+        document.getElementById("comb").style.backgroundColor = "white";
         return;
     }
 
