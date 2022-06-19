@@ -50,10 +50,9 @@
             <br>
             <div><input type="text" id="userinput" class="box_design"></div>
             <br>
-            <div><output type="text" id="res" class="display-box"></output></div>
             <div>
 
-                <input type="button" class="btn1" value="C" onclick="clrall('userinput','res')" />
+                <input type="button" class="btn1" value="C" onclick="clrall('userinput','');" />
                 <input type="button" class="btn-grey" value="&#8592;" onclick="back('userinput')" />
                 <input type="button" class="btn1" value="(" onclick="nmr('&#40','userinput')" />
                 <input type="button" class="btn1" value=")" onclick="nmr('&#41','userinput')" />
@@ -81,7 +80,7 @@
                 <input type="button" class="btn1" value=". " onclick="nmr('.','userinput')" />
                 <input type="button" class="btn1" value="0" onclick="nmr('0','userinput')" />
                 <input type="button" class="btn1" value="+" onclick="nmr('+','userinput')" />
-                <input type="button" class="btn1" value="=" id="=" onclick="output('userinput','res');" />
+                <input type="button" class="btn1" value="=" id="=" onclick="output('userinput','userinput');" />
             </div>
         </div>
     </div>

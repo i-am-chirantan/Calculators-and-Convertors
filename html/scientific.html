@@ -46,12 +46,11 @@
             <img src="../img/calculpic.png" class="calculimg" alt="" srcset="">
             <input type="text" id="screen" maxlength="20">
             <br>
-            <output type="text" id="result"></output>
             <div class="calc-buttons ">
 
 
                 <div class="functions-one ">
-                    <button class="triggers all" onclick="clrall( 'screen', 'result') ">C</button>
+                    <button class="triggers all" onclick="clrall( 'screen', '');">C</button>
                     <button class="triggers all" onclick="back( 'screen') ">&#8592</button>
                     <button class="basic-stuff all" onclick="nmr( '&#40', 'screen') ">(</button>
                     <button class="basic-stuff all" onclick="nmr( '&#41', 'screen') ">)</button>
@@ -84,7 +83,7 @@
                     <button class="complex-stuff all" onclick="nmr( 'sqrt &#40', 'screen') ">√</button>
                     <button class="complex-stuff all" onclick="nmr( 'tan&#40', 'screen') ">tan</button>
                     <button class="complex-stuff all" onclick="nmr( 'log&#40', 'screen') ">log</button>
-                    <button class="triggers all" id="equal" onclick="output('screen','result') "> =</button>
+                    <button class="triggers all" id="equal" onclick="output('screen','screen') "> =</button>
                     <button class="basic-stuff all" onclick=" nmr( '.', 'screen') ">.</button>
                     <button class="complex-stuff all" onclick="nmr( 'pi', 'screen') ">π</button>
                 </div>

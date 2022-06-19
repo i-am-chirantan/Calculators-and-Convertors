@@ -4,17 +4,17 @@ function output(x, y) {
 
     try {
 
-        document.getElementById(y).innerHTML = math.evaluate(k);
-        document.getElementById(y).style.color = "white";
+        document.getElementById(y).value = math.evaluate(k);
+        document.getElementById(y).style.color = "blue";
     } catch (err) {
-        error();
+        error(y);
     }
     console.log(math.evaluate(k));
 
 }
 
-function error() {
-    document.getElementById("result").value = "Invalid Expression";
-    document.getElementById("result").style.color = "red";
+function error(y) {
+    document.getElementById(y).value = "Invalid Expression";
+    document.getElementById(y).style.color = "red";
     return;
 }

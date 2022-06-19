@@ -12,13 +12,12 @@ function nmr(val, input) {
         return;
     }
     document.getElementById(input).value = prev + val;
+    document.getElementById(input).style.color = "black";
 
 }
 
-function clrall(input, output) {
-    document.getElementById(input).value = "";
-    document.getElementById(input).style.color = "black";
-    document.getElementById(output).value = "";
+function clrall(input, val) {
+    document.getElementById(input).value = val;
     document.getElementById(input).style.color = "black";
 }
 

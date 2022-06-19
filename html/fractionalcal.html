@@ -59,11 +59,6 @@
                                 <input type="number" id="b" class="box_design">
                             </td>
                             <td></td>
-                            <td>
-                                <span class="text">
-                                    <output type="number" id="w1">?</output>
-                                </span>
-                            </td>
                         </tr>
                         <tr>
                             <td>----------------------</td>
@@ -80,10 +75,6 @@
                 </select></td>
 
                             <td>----------------------</td>
-                            <td> = </td>
-                            <!-- separator -->
-
-                            <td>----------</td>
                         </tr>
                         <tr>
                             <td>
@@ -95,23 +86,31 @@
                                 <input type="number" id="d" class="box_design">
                             </td>
                             <td></td>
-                            <td>
-                                <span class="text">
-                                    <output type="number" id="w2">?</output>
-                                </span>
-                            </td>
-
                         </tr>
                     </table>
                 </div>
                 <div>
+                </div>
+
+                <span class="text">
+                    <output type="number" id="w1">?</output>
+                </span>
+                <div>
+                    = ----------
+                </div>
+                <div>
                     <span class="text">
-                        <output id="decimal"></output>
+                        <output type="number" id="w2">?</output>
+                    </span>
+                </div>
+                <div>
+                    <span class="text">
+                        <output id="decimal">Result in Decimal=</output>
                     </span>
                 </div>
                 <div>
                     <button type="submit" class="calculate box_design" onclick="submit1()">calculate</button>
-                    <button type="reset" class="clear box_design" onclick="clrall('a','w1'); clrall('b','w2'); clrall('c','w1'); clrall('d','w1');">clear</button>
+                    <button type="reset" class="clear box_design" onclick="clrall('a',''); clrall('w1','?'); clrall('b','');clrall('w2','?');  clrall('c',''); clrall('d','');">clear</button>
                 </div>
 
                 <div class="dectofrac">
@@ -121,28 +120,35 @@
                         <table class="tcenter">
                             <tr>
                                 <td><input class="box_design" type="number" id="dec"></td>
-                                <td>
-                                    <span class="text">
-                                        <output type="number" id="y0"></output>
-                                    </span>
-                                </td>
-                                <td>
-                                    <span class="text">
-                                        <output type="number" id="y1">?</output>
-                                    </span>
-                                </td>
-                                <td>/</td>
-                                <td>
-                                    <span class="text">
-                                        <output type="number" id="y2">?</output>
-                                    </span>
-                                </td>
                             </tr>
                         </table>
+                        <div class="alpha">
+                            <div>
+                                <br>
+                                <span class="text">
+                                    <output type="number" id="y0">?</output>
+                                </span>
+                            </div>
+                            <div>
+                                <div>
+                                    <span class="text">
+                                    <output type="number" id="y1">?</output>
+                                    </span>
+                                </div>
+                                <div>
+                                    = ----------
+                                </div>
+                                <div>
+                                    <span class="text">
+                                <output type="number" id="y2">?</output>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div>
                         <button type="submit" class="calculate box_design" onclick="submit3()">calculate</button>
-                        <button type="reset" class="clear box_design" onclick="clrall('dec','y1'); clrall('dec','y2')">clear</button>
+                        <button type="reset" class="clear box_design" onclick="clrall('dec',''); clrall('y0','?'); clrall('y1','?');clrall('y2','?'); ">clear</button>
                     </div>
                 </div>
             </div>
@@ -156,11 +162,6 @@
                         </tr>
                         <tr>
                             <td>------------</td>
-                            <td>
-                                <span class="text">
-                                    <output type="number" id="z1">?</output>
-                                </span>
-                            </td>
                         </tr>
                         <tr>
                             <td><input type="number" class="box_design" id="func2"></td>
@@ -169,8 +170,13 @@
                     </table>
                 </div>
                 <div>
+                    <span class="text">
+                                    <output type="number" id="z1">?</output>
+                                </span>
+                </div>
+                <div>
                     <button type="submit" class="calculate box_design" onclick="submit4()">calculate</button>
-                    <button type="reset" class="clear box_design" onclick="clrall('func1','z1'); clrall('func2','z1');">clear</button>
+                    <button type="reset" class="clear box_design" onclick="clrall('func1',''); clrall('func2','');clrall('z1','?'); ">clear</button>
                 </div>
             </div>
         </div>
