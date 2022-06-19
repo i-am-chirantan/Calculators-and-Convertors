@@ -1,0 +1,67 @@
+::placeholder {
+    color: rgb(117, 117, 130);
+    font-size: 75%;
+    overflow: auto;
+    margin: 0px;
+}
+
+p {
+    color: rgba(60, 35, 7, 0.675);
+    font-size: 18px;
+    font-style: bold;
+}
+
+@media screen and (max-width: 1080px) {
+    * {
+        overflow: auto;
+    }
+    .box_design {
+        width: 60%;
+    }
+    .calculate {
+        width: 20%;
+    }
+    .clear {
+        width: 20%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    * {
+        overflow: auto;
+    }
+    .calculate,
+    .clear {
+        font-size: 100%;
+        padding: 0px;
+    }
+    .calculate {
+        width: 80%;
+    }
+    h1 {
+        font-size: 120%;
+    }
+}
+
+@media screen and (max-width: 438px) {
+    * {
+        overflow: auto;
+    }
+    .calculate,
+    .clear {
+        font-size: 80%;
+        padding: 0px;
+    }
+    .calculate {
+        width: 60%;
+    }
+    h1 {
+        font-size: 120%;
+        display: inline-block;
+    }
+    output {
+        font-size: 80%;
+        text-align: center;
+        margin: 5px 5px;
+    }
+}

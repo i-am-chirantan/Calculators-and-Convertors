@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Calculator</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/common_style.css">
+    <link rel="stylesheet" href="../css/percomb.css">
+    <script src="../script/script.js"></script>
+    <script src="../script/percomb.js"></script>
+</head>
+
+
+<body>
+    <div class="navbar">
+        <a href="../index.html" target="_self">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">Calculators
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="../index.html" target="_self">Simple Calculator</a>
+                <a href="./scientific.html" target="_self">Scientific Calculator</a>
+                <a href="./fractionalcal.html" target="_self">Fractional Calculator</a>
+                <a href="./percencal.html" target="_self">Percentage Calculator</a>
+                <a href="./probcal.html" target="_self">Probability and Statistics Calculator</a>
+                <a href="./percomb.html" target="_self">Permutation and Combination Calculator</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Others
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="./html/about.html" target="_self">About</a>
+                <a href="./html/contact.html" target="_self">Contact</a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="calculator">
+            <h1>Permutation and Combination Calculator</h1>
+            <p>Permutations and combinations are a subset of the study of finite, discrete structures that is known as combinatorics. Combinations involve the selection of items without respect to order, whereas permutations are precise selections of elements
+                within a set where the order of the elements is significant. According to mathematical definitions, a common combination lock should actually be called a permutation lock because the order in which the numbers are input matters; for example,
+                1-2-9 is not the same as 2-9-1, whereas any combination of those three digits would work. The calculator above only takes into account the scenario without replacement, often known as without repetition. There are several kinds of permutations
+                and combinations.</p>
+            <input type="number" id="upper" class="box_design" placeholder="Objects (n)">
+            <input type="number" id="lower" class="box_design" placeholder="Sample (r)	">
+            <div><button type="submit" class="box_design calculate" onclick="calc1()">calculate</button>
+                <button type="reset" class="box_design clear" onclick="clrall('upper',''); clrall('lower','');clrall('perm','?');clrall('comb','?');">clear</button>
+            </div>
+            <h1>Permutation (<sup>n</sup>P<sub>r</sub>) =</h1>
+            <div>
+                <span class="text">
+                        <output type="number" id="perm">?</output>
+                </span>
+            </div>
+            <h1>Combination (<sup>n</sup>P<sub>r</sub>) =</h1>
+            <div>
+                <span class="text">
+                        <output type="number" id="comb">?</output>
+                </span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
