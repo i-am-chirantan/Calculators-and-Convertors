@@ -1,7 +1,7 @@
 * {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     overflow: auto;
     text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .calculimg {
@@ -11,6 +11,7 @@
 h1 {
     color: #9fe5ad;
     text-shadow: 1px 1px 10px #0000007f;
+    font-family: 'Varela Round', sans-serif, cursive;
 }
 
 .sign {
@@ -132,7 +133,7 @@ table {
     border-radius: 10px;
     border: none;
     padding: 3px;
-    font-size: 20px;
+    font-size: 90%;
     text-align: center;
 }
 

@@ -8,9 +8,11 @@
 textarea {
     padding: 20px;
     border-radius: 10px;
-    margin: 5px;
-    font-size: 18px;
     border-color: transparent;
+    margin: 5px;
+    text-align: left;
+    resize: both;
+    font-size: 100%;
     box-shadow: 0px 0px 15px #0000007f;
     background-color: rgba(255, 255, 255, 0.655);
 }
@@ -21,5 +23,5 @@ textarea {
 }
 
 ::placeholder {
-    font-size: 20px;
+    font-size: 90%;
 }
