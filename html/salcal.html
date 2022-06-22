@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loan Calculator</title>
+    <title>Salary Calculator</title>
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/common_style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Monofett&display=swap" rel="stylesheet">
     <script src="../script/script.js"></script>
-    <script src="../script/loancal.js"></script>
+    <script src="../script/salcal.js"></script>
 
 </head>
 
@@ -45,31 +45,26 @@
     </div>
     <div class="container ">
         <div class="calculator ">
-            <h1>Loan Calculator</h1>
-            <p>The Loan Calculator can be used to calculate monthly EMI of the loan by taking the total amount, months to repay and the rate of interest.</p>
+            <h1>Salary Calculator</h1>
+            <p>The Salary Calculator can be used to calculate monthly EMI of the loan by taking the total amount, months to repay and the rate of interest.</p>
             <div>
-                <h2>Amount (in &#8377):</h2>
+                <h2>Hourly Wage (in &#8377):</h2>
                 <div>
-                    <input type="number" class="box_design" id="p" min="50" required>
+                    <input type="number" class="box_design" id="wage" min="10" required>
                 </div>
             </div>
             <div>
-                <h2>Interest Rate (in %):</h2>
+                <h2>Hours per week:</h2>
                 <div>
-                    <input type="number" class="box_design" id="r" min="1" required>
+                    <input type="number" class="box_design" id="hours" min="1" required>
                 </div>
             </div>
+
             <div>
-                <h2>Time (in months):</h2>
-                <div>
-                    <input type="number" class="box_design" id="t" min="6" required>
-                </div>
+                <button type="submit" class="box_design calculate button-animate" onclick="salcal()">calculate</button>
             </div>
             <div>
-                <button type="submit" class="box_design calculate button-animate" onclick="loancal()">calculate</button>
-            </div>
-            <div>
-                <output type="text" class="box_design" id="emi"></output>
+                <output type="text" class="box_design" id="sal"></output>
             </div>
         </div>
     </div>

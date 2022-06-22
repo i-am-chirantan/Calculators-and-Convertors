@@ -7,6 +7,10 @@ function isOperator(a) {
 
 function nmr(val, input) {
     var prev = document.getElementById(input).value;
+    if (prev == "undefined" || prev == "Invalid Expression") {
+        clrall(input, '');
+        prev = "";
+    }
     if (prev.length > 0 && isOperator(prev.charAt(prev.length - 1)) && isOperator(val)) {
         document.getElementById(input).value = prev.substr(0, prev.length - 1) + val;
         return;

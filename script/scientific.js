@@ -1,7 +1,8 @@
+const { isNull } = require("mathjs");
+
 function output(x, y) {
 
     var k = document.getElementById(x).value;
-
     try {
 
         document.getElementById(y).value = math.evaluate(k);
