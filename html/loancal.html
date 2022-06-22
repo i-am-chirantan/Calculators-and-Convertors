@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Calculator</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/common_style.css">
+    <link rel="stylesheet" href="../css/loancal.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monofett&display=swap" rel="stylesheet">
+    <script src="../script/script.js"></script>
+    <script src="../script/loancal.js"></script>
+
+</head>
+
+
+<body>
+    <div class=" navbar ">
+        <a href="../index.html " target="_self ">Home</a>
+        <div class="dropdown ">
+            <button class="dropbtn ">Mathematical
+                <i class="fa fa-caret-down "></i>
+            </button>
+            <div class="dropdown-content ">
+                <a href="../index.html " target="_self ">Simple Calculator</a>
+                <a href="./scientific.html " target="_self ">Scientific Calculator</a>
+                <a href="./fractionalcal.html " target="_self ">Fractional Calculator</a>
+                <a href="./percencal.html " target="_self ">Percentage Calculator</a>
+                <a href="./probcal.html " target="_self ">Probability and Statistics Calculator</a>
+                <a href="./percomb.html " target="_self ">Permutation and Combination Calculator</a>
+            </div>
+        </div>
+        <div class="dropdown ">
+            <button class="dropbtn ">Financial
+                <i class="fa fa-caret-down "></i>
+            </button>
+            <div class="dropdown-content ">
+                <a href="./loancal.html " target="_self ">Loan Calculator</a>
+            </div>
+        </div>
+    </div>
+    <div class="container ">
+        <div class="calculator ">
+            <h1>Loan Calculator</h1>
+            <div>
+                <h2>Amount (in &#8377):</h2>
+                <div>
+                    <input type="number" class="box_design" id="p" min="50">
+                </div>
+            </div>
+            <div>
+                <h2>Interest Rate (in %):</h2>
+                <div>
+                    <input type="number" class="box_design" id="r" min="1">
+                </div>
+            </div>
+            <div>
+                <h2>Time (in months):</h2>
+                <div>
+                    <input type="number" class="box_design" id="t" min="6">
+                </div>
+            </div>
+            <div>
+                <button type="submit" class="box_design calculate button-animate" onclick="loancal()">calculate</button>
+            </div>
+            <div>
+                <output type="text" class="box_design" id="emi"></output>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
