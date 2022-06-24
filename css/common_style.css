@@ -14,17 +14,17 @@ h3,
 h4,
 h5,
 h6 {
-    text-shadow: 1px 1px 10px #0000007f;
+    text-shadow: 1.2px 1.3px 1px #0000007f;
     font-family: 'Varela Round', sans-serif, cursive;
 }
 
 h1 {
-    color: #9fe5ad;
+    color: #ffca43;
     font-size: 1.7em;
 }
 
 h2 {
-    color: rgb(243, 255, 130);
+    color: #370617;
 }
 
 .sign {
@@ -32,7 +32,7 @@ h2 {
 }
 
 body {
-    background-color: #1793ff;
+    background-color: #3C096C;
 }
 
 .container {
@@ -45,7 +45,7 @@ body {
     border-radius: 15px;
     padding: 10px;
     overflow-wrap: break-word;
-    background-color: rgba(255, 255, 255, 0.417);
+    background-color: #5A189A;
     box-shadow: 0px 0px 15px #0000007f;
 }
 
@@ -58,14 +58,21 @@ body {
     padding: 20px;
     border-radius: 10px;
     margin: 10px auto;
-    background-color: #ff598d;
+    background-color: #ff4787b0;
     box-shadow: 0px 0px 15px #0000007f;
 }
 
 p {
-    color: rgba(60, 35, 7, 0.675);
+    color: #410B13;
+    background-color: #ffffff8c;
+    padding: 2%;
+    border-radius: 13px;
     font-size: -1.3em;
+    text-shadow: 0px 1px 2px #0000007f;
     font-style: bold;
+    box-shadow: 0px 0px 5px #0000007f;
+    font-style: italic;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 output {
@@ -96,7 +103,7 @@ table {
     border-color: transparent;
     text-align: center;
     font-size: 18px;
-    box-shadow: 0px 0px 15px #0000007f;
+    box-shadow: 0px 0px 7px #0000007f;
 }
 
 .calculate {
