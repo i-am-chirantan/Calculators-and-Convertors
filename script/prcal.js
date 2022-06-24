@@ -25,6 +25,6 @@ function prcal() {
         } else {
             str = "no change";
         }
+        document.getElementById("outc" + i).value = str;
     }
-    document.getElementById("outc" + i).value = str;
 }
