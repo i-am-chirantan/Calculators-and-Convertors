@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profitability Ratios Calculator</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/common_style.css">
+    <link rel="stylesheet" href="../css/prcal.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monofett&display=swap" rel="stylesheet">
+    <script src="../script/script.js"></script>
+    <script src="../script/prcal.js"></script>
+</head>
+
+
+<body>
+    <div class="navbar">
+        <a href="../index.html" target="_self">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">Mathematical
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="../index.html" target="_self">Simple Calculator</a>
+                <a href="./scientific.html" target="_self">Scientific Calculator</a>
+                <a href="./fractionalcal.html" target="_self">Fractional Calculator</a>
+                <a href="./percencal.html" target="_self">Percentage Calculator</a>
+                <a href="./probcal.html" target="_self">Probability and Statistics Calculator</a>
+                <a href="./percomb.html" target="_self">Permutation and Combination Calculator</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn ">Financial
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="./salcal.html" target="_self ">Salary Calculator</a>
+                <a href="./loancal.html" target="_self ">Loan Calculator</a>
+                <a href="./prcal.html" target="_self ">Profitability Ratios Calculator</a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="calculator">
+            <h1>Profitability Ratios Calculator
+            </h1>
+            <p>This calculator will provide answers for up to four measures of a company's or organization's profitability: return on assets, return on equity, gross profit margin, operating profit margin, net profit margin, earnings per share, and price/earnings
+                (P/E) ratio. The calculator can only calculate one or two sets of data points and will only return results for ratios that can be calculated based on the user's inputs.</p>
+            <div class="inside">
+                <div class="headab">
+                    <div>
+                        <b>A</b>
+                    </div>
+                    <div>
+                        <b>B</b>
+                    </div>
+                </div>
+                <div class="prcdata">
+                    <h3>Net Income:</h3>
+                    <f class="x"> Net Income:</f>
+                    <input type="number" class="box_design" id="a1" placeholder="0" />
+                    <input type="number" class="box_design" id="b1" placeholder="0" />
+                </div>
+                <div class="prcdata">
+                    <h3>Total assets:</h3>
+                    <f class="x">Total assets:</f>
+                    <input type="number" class="box_design" id="a2" placeholder="0" />
+                    <input type="number" class="box_design" id="b2" placeholder="0" />
+                </div>
+                <div class="prcdata">
+                    <h3>Shareholders Equity:</h3>
+                    <f class="x">Shareholders Equity:</f>
+                    <input type="number" class="box_design" id="a3" placeholder="0" />
+                    <input type="number" class="box_design" id="b3" placeholder="0" />
+                </div>
+                <div class="prcdata">
+                    <h3>Gross Profit:</h3>
+                    <f class="x">Gross Profit:</f>
+                    <input type="number" class="box_design" id="a4" placeholder="0" />
+                    <input type="number" class="box_design" id="b4" placeholder="0" />
+                </div>
+                <div class="prcdata">
+                    <h3>Sales:</h3>
+                    <f class="x">Sales:</f>
+                    <input type="number" class="box_design" id="a5" placeholder="0" />
+                    <input type="number" class="box_design" id="b5" placeholder="0" />
+                </div>
+                <div class="prcdata">
+                    <h3>Operating Profit:</h3>
+                    <f class="x">Operating Profit:</f>
+                    <input type="number" class="box_design" id="a6" placeholder="0" />
+                    <input type="number" class="box_design" id="b6" placeholder="0" />
+                </div>
+                <div class="prcdata">
+                    <h3>Common Stock:</h3>
+                    <f class="x">Common Stock:</f>
+                    <input type="number" class="box_design" id="a7" placeholder="0" />
+                    <input type="number" class="box_design" id="b7" placeholder="0" />
+                </div>
+                <div class="prcdata">
+                    <h3>Market Price:</h3>
+                    <f class="x">Market Price:</f>
+                    <input type="number" class="box_design" id="a8" placeholder="0" />
+                    <input type="number" class="box_design" id="b8" placeholder="0" />
+                </div>
+                <div>
+                    <f class="x">Significant Figures:</f>
+                    <f class="y">Sig Fig:</f>
+                    <label for="sig"></label>
+
+                    <select name="sig" id="sigf">
+                       <option id="3">3</option>
+                       <option id="4">4</option>
+                       <option id="5">5</option>
+                       <option id="6">6</option>
+                    </select>
+                </div>
+            </div>
+            <div>
+                <button type="submit" class="box_design calculate button-animate" onclick="prcal()">calculate</button>
+            </div>
+            <div>
+            </div>
+            <table class="tab">
+                <tr>
+                    <th>Inputs</th>
+                    <th>A</th>
+                    <th>B</th>
+                    <th>Change</th>
+                </tr>
+                <tr>
+                    <td>Net Income</td>
+                    <td><span><output type="number" class="out" id="outa1">0</output></span></td>
+                    <td><span><output type="number" class="out" id="outb1">0</output></span></td>
+                    <td><span><output type="number" class="out" id="outc1"></output></span></td>
+                </tr>
+                <tr>
+                    <td>Total Assets</td>
+                    <td><span><output type="number" class="out" id="outa2">0</output></span></td>
+                    <td><span><output type="number" class="out" id="outb2">0</output></span></td>
+                    <td><span><output type="number" class="out" id="outc2"></output></span></td>
+                </tr>
+                <tr>
+                    <td>Shareholders Equity</td>
+                    <td><span><output type="number" class="out" id="outa3">0</output></span></td>
+                    <td><span><output type="number" class="out" id="outb3">0</output></span></td>
+                    <td><span><output type="number" class="out" id="outc3"></output></span></td>
+                </tr>
+                <tr>
+                    <td>Gross Profit</td>
+                    <td><span><output type="number" class="out" id="outa4">0</output></span></td>
+                    <td><span><output type="number" class="out" id="outb4">0</output></span></td>
+                    <td><span><output type="number" class="out" id="outc4"></output></span></td>
+                </tr>
+                <tr>
+                    <td>Sales</td>
+                    <td><span></span><output type="number" class="out" id="outa5">0</output></td>
+                    <td><span></span><output type="number" class="out" id="outb5">0</output></td>
+                    <td><span></span><output type="number" class="out" id="outc5"></output></td>
+                </tr>
+                <tr>
+                    <td>Operating Profit</td>
+                    <td><span><output type="number" class="out" id="outa6">0</output></span></td>
+                    <td><span><output type="number" class="out" id="outb6">0</output></span></td>
+                    <td><span><output type="number" class="out" id="outc6"></output></span></td>
+                </tr>
+                <tr>
+                    <td>Common Stock Outstanding</td>
+                    <td><span><output type="number" class="out" id="outa7">0</output></span></td>
+                    <td><span><output type="number" class="out" id="outb7">0</output></span></td>
+                    <td><span><output type="number" class="out" id="outc7"></output></span></td>
+                </tr>
+                <tr>
+                    <td>Market Price per Share</td>
+                    <td><span><output type="number" class="out" id="outa8">0</output></span></td>
+                    <td><span><output type="number" class="out" id="outb8">0</output></span></td>
+                    <td><span><output type="number" class="out" id="outc8"></output></span></td>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+</body>
+
+</html>

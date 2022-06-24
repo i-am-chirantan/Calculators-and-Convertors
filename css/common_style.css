@@ -8,16 +8,23 @@
     display: none;
 }
 
-h1 {
-    color: #9fe5ad;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     text-shadow: 1px 1px 10px #0000007f;
     font-family: 'Varela Round', sans-serif, cursive;
 }
 
+h1 {
+    color: #9fe5ad;
+    font-size: 1.7em;
+}
+
 h2 {
     color: rgb(243, 255, 130);
-    text-shadow: 1px 1px 10px #0000007f;
-    font-family: 'Varela Round', sans-serif, cursive;
 }
 
 .sign {
@@ -51,13 +58,13 @@ body {
     padding: 20px;
     border-radius: 10px;
     margin: 10px auto;
-    background-color: #ec8aa9;
+    background-color: #ff598d;
     box-shadow: 0px 0px 15px #0000007f;
 }
 
 p {
     color: rgba(60, 35, 7, 0.675);
-    font-size: 18px;
+    font-size: -1.3em;
     font-style: bold;
 }
 
@@ -226,7 +233,7 @@ table {
         width: 80%;
     }
     h1 {
-        font-size: 120%;
+        font-size: 150%;
     }
 }
 
@@ -241,8 +248,5 @@ table {
     }
     .calculate {
         width: 70%;
-    }
-    h1 {
-        font-size: 90%;
     }
 }

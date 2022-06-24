@@ -1,0 +1,97 @@
+.prcdata {
+    text-align: right;
+}
+
+.inside {
+    padding-right: 22%;
+    padding-left: 10%;
+}
+
+.y,
+h3 {
+    display: none;
+}
+
+.headab {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 32%;
+    align-items: center;
+}
+
+#sigf {
+    border-radius: 12px;
+    padding: 4px;
+    font-size: 90%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+table {
+    padding-left: 10%;
+    padding-right: 15%;
+    border-radius: 10px;
+    background-color: #f5f5f5a8;
+}
+
+span {
+    width: 20%;
+    overflow: auto;
+}
+
+.out {
+    text-align: center;
+}
+
+td,
+th {
+    padding: 3px;
+}
+
+@media screen and (max-width: 1401px) {
+    .inside {
+        padding-right: 15%;
+        padding-left: 5%;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .headab {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1197px) {
+    .inside {
+        padding-right: 12%;
+        padding-left: 5%;
+    }
+}
+
+@media screen and (max-width: 1154px) {
+    .inside {
+        padding-right: 8%;
+        padding-left: 1%;
+    }
+}
+
+@media screen and (max-width: 843px) {
+    .inside {
+        padding-right: 25%;
+    }
+    .x {
+        display: none;
+    }
+    .y,
+    h3 {
+        display: block;
+        text-align: center;
+        padding-left: 35%;
+    }
+    .y {
+        font-weight: bold;
+    }
+    #sigf {
+        margin-left: 30%;
+    }
+}
