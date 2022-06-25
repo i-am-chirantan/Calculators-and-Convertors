@@ -4,8 +4,16 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.calculimg {
-    display: none;
+.sym {
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    width: 60px;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.nameweb {
+    margin-left: 1.7%;
 }
 
 .no-js #loader {
@@ -100,7 +108,7 @@ p {
 
 p:hover {
     background-color: #ffffff58;
-    box-shadow: 7px 7px 5px 2px#0000007f;
+    box-shadow: 5px 5px 5px 2px#0000007f;
 }
 
 output {

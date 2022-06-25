@@ -31,12 +31,12 @@ function back(input) {
     document.getElementById(input).value = value.substr(0, value.length - 1);
 }
 
-
-
-
-//paste this code under the head tag or in a separate js file.
-// Wait for window load
 $(window).load(function() {
     // Animate loader off screen
-    $(".se-pre-con").fadeOut("slow");;
+    $(".se-pre-con").fadeOut("slow");
 });
+
+function reload() {
+    //open home page
+    window.location.href = "../index.html";
+}
