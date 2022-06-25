@@ -38,5 +38,5 @@ $(window).load(function() {
 
 function reload() {
     //open home page
-    window.location.href = "../index.html";
+    window.open("../index.html");
 }
