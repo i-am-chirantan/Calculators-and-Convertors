@@ -30,3 +30,13 @@ function back(input) {
     var value = document.getElementById(input).value;
     document.getElementById(input).value = value.substr(0, value.length - 1);
 }
+
+
+
+
+//paste this code under the head tag or in a separate js file.
+// Wait for window load
+$(window).load(function() {
+    // Animate loader off screen
+    $(".se-pre-con").fadeOut("slow");;
+});
