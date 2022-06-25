@@ -43,7 +43,8 @@ h3,
 h4,
 h5,
 h6 {
-    text-shadow: 1.2px 1.3px 1px #0000007f;
+    text-shadow: 1.2px 1.3px 1px #828282bc;
+    translate: translateX(10px);
     font-family: 'Varela Round', sans-serif, cursive;
 }
 
@@ -93,22 +94,62 @@ body {
 
 p {
     color: #410B13;
-    background-color: #ffffff3a;
+    background-color: #ffffff63;
     backdrop-filter: blur(20px);
+    margin: 1%;
     padding: 2%;
     border: none;
     border-radius: 13px;
-    font-size: -1.3em;
+    font-size: 120%;
     text-shadow: 0px 1px 2px #0000007f;
     font-style: bold;
-    box-shadow: 0px 0px 20px 0.1px #0000007f;
+    box-shadow: 0px 0px 12px 0.4px #0000007f;
     font-style: italic;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 p:hover {
-    background-color: #ffffff58;
+    background-color: #fcffcee5;
     box-shadow: 5px 5px 5px 2px#0000007f;
+}
+
+.para {
+    background-color: #ffffff;
+}
+
+.para:hover {
+    background-color: #f3ff6d;
+    box-shadow: 0px 0px 10px 5px#0000007f;
+    transform: translateY(-5px, 45px);
+    transition: all 0.5s ease-in-out;
+}
+
+#simple {
+    background-color: #0081a7;
+}
+
+#scientific {
+    background-color: #00AFB9;
+}
+
+#fraction {
+    background-color: #FDFCDC;
+}
+
+#percentage {
+    background-color: #FED9B7;
+}
+
+#prob {
+    background-color: #E76F51;
+}
+
+.segment {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0px 0px 15px #0000007f;
 }
 
 output {
