@@ -87,9 +87,6 @@ output {
         height: 5em;
         width: auto;
     }
-    h1 {
-        display: none;
-    }
 }
 
 @media(max-width:590px) {
@@ -120,17 +117,11 @@ output {
 }
 
 @media(max-width:433px) {
-    h1 {
-        display: none;
-    }
-    @media(max-width:418px) {
+    @media(max-width: 418px) {
         .calculimg {
             display: inline-block;
             height: 5em;
             width: auto;
-        }
-        h1 {
-            display: none;
         }
     }
     .btn1,
