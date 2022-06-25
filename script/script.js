@@ -36,7 +36,7 @@ $(window).load(function() {
     $(".se-pre-con").fadeOut("slow");
 });
 
-function reload() {
+function reloadpage() {
     //open home page
     window.open("../index.html");
 }
