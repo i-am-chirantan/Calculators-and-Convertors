@@ -7,7 +7,7 @@
 .sym {
     -webkit-clip-path: circle(50% at 50% 50%);
     clip-path: circle(50% at 50% 50%);
-    width: 60px;
+    width: 57px;
     margin-left: 1%;
     margin-right: 1%;
 }
@@ -37,23 +37,18 @@
     background: url(../img/giphy.gif) center no-repeat rgba(229, 239, 241, 255);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+.head1,
+.head2 {
     text-shadow: 1.2px 1.3px 1px #828282bc;
     translate: translateX(10px);
     font-family: 'Varela Round', sans-serif, cursive;
 }
 
-h1 {
+.head1 {
     color: #ffca43;
-    font-size: 1.7em;
 }
 
-h2 {
+.head2 {
     color: #370617;
 }
 
@@ -92,7 +87,7 @@ body {
     box-shadow: 0px 0px 15px 5px #0000007f;
 }
 
-p {
+.explaincal {
     color: #410B13;
     background-color: #ffffff63;
     backdrop-filter: blur(20px);
@@ -108,13 +103,18 @@ p {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-p:hover {
+.explaincal:hover {
     background-color: #fcffcee5;
     box-shadow: 5px 5px 5px 2px#0000007f;
 }
 
 .para {
     background-color: #ffffff;
+    backdrop-filter: blur(20px);
+    margin: 1%;
+    padding: 2%;
+    border-radius: 14px;
+    box-shadow: 0px 0px 12px 0.4px #0000007f;
 }
 
 .para:hover {
@@ -129,19 +129,35 @@ p:hover {
 }
 
 #scientific {
-    background-color: #00AFB9;
+    background-color: #0098b0;
 }
 
 #fraction {
-    background-color: #FDFCDC;
+    background-color: #00afb9;
 }
 
 #percentage {
-    background-color: #FED9B7;
+    background-color: #7fd6cb;
 }
 
 #prob {
-    background-color: #E76F51;
+    background-color: #fdfcdc;
+}
+
+#percomb {
+    background-color: #feebca;
+}
+
+#salary {
+    background-color: #fed9b7;
+}
+
+#loan {
+    background-color: #f7a58f;
+}
+
+#prc {
+    background-color: #f07167;
 }
 
 .segment {
@@ -274,6 +290,12 @@ table {
     box-shadow: 0px 0px 10px #000000c8;
 }
 
+::placeholder {
+    color: rgb(117, 117, 130);
+    font-size: 75%;
+    overflow: auto;
+}
+
 @media(max-width:453px) {
     #userinput {
         margin: 2px;
@@ -281,12 +303,6 @@ table {
         size: 50;
         text-align: center;
     }
-}
-
-::placeholder {
-    color: rgb(117, 117, 130);
-    font-size: 75%;
-    overflow: auto;
 }
 
 @media screen and (max-width: 1080px) {
@@ -321,6 +337,12 @@ table {
     }
 }
 
+@media screen and (max-width: 647px) {
+    .sym {
+        width: 50px;
+    }
+}
+
 @media screen and (max-width: 436px) {
     * {
         overflow: auto;
@@ -332,5 +354,48 @@ table {
     }
     .calculate {
         width: 70%;
+    }
+}
+
+@media screen and (max-width: 482px) {
+    .sym {
+        width: 30px;
+    }
+    .head1 {
+        font-size: 100%;
+    }
+    .explaincal {
+        font-size: 90%;
+    }
+    .head2 {
+        font-size: 100%;
+    }
+    .footer {
+        font-size: 90%;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .nameweb {
+        font-size: 70%;
+    }
+    .clear {
+        font-size: 70%;
+    }
+    .footer {
+        font-size: 70%;
+    }
+}
+
+@media screen and (max-width: 334px) {
+    .nameweb {
+        font-size: 70%;
+    }
+    .clear {
+        font-size: 70%;
+    }
+    .dropbtn {
+        font-size: 20%;
+        margin-left: 0.3;
     }
 }

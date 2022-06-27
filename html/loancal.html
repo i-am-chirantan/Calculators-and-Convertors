@@ -8,6 +8,7 @@
     <title>Loan Calculator</title>
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/common_style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Monofett&display=swap" rel="stylesheet">
@@ -15,6 +16,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
     <script src="../script/script.js"></script>
     <script src="../script/loancal.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </head>
 
@@ -23,17 +28,15 @@
     <div class="se-pre-con"></div>
     <div class=" navbar ">
         <div class="nameweb">
-            <h1 class="name">Calculazo</h1>
+            <h1 class="name head1">Calculazo</h1>
         </div>
         <img src="../img/calculazoi.png" alt="" class="sym">
         <div class="dropdown ">
             <button class="dropbtn " id="Home" onclick="window.location.href='../index.html'">Home
-                <i class="fa fa-caret-down "></i>
             </button>
         </div>
         <div class="dropdown">
             <button class="dropbtn ">Mathematical
-                <i class="fa fa-caret-down "></i>
             </button>
             <div class="dropdown-content ">
                 <a href="../index.html " target="_self ">Simple Calculator</a>
@@ -46,7 +49,6 @@
         </div>
         <div class="dropdown">
             <button class="dropbtn">Financial
-                <i class="fa fa-caret-down"></i>
             </button>
             <div class="dropdown-content">
                 <a href="./salcal.html " target="_self ">Salary Calculator</a>
@@ -56,28 +58,27 @@
         </div>
         <div class="dropdown ">
             <button class="dropbtn " id="About" onclick="window.location.href='../html/about.html'">About
-                <i class="fa fa-caret-down "></i>
             </button>
         </div>
     </div>
     <div class="container">
         <div class="calculator">
-            <h1>Loan Calculator</h1>
+            <h1 class="head1">Loan Calculator</h1>
             <p>The Loan Calculator can be used to calculate monthly EMI of the loan by taking the total amount, months to repay and the rate of interest.</p>
             <div>
-                <h2>Amount (in &#8377):</h2>
+                <h2 class="head2">Amount (in &#8377):</h2>
                 <div>
                     <input type="number" class="box_design" id="p" min="50" required>
                 </div>
             </div>
             <div>
-                <h2>Interest Rate (in %):</h2>
+                <h2 class="head2">Interest Rate (in %):</h2>
                 <div>
                     <input type="number" class="box_design" id="r" min="1" required>
                 </div>
             </div>
             <div>
-                <h2>Time (in months):</h2>
+                <h2 class="head2">Time (in months):</h2>
                 <div>
                     <input type="number" class="box_design" id="t" min="6" required>
                 </div>
@@ -89,6 +90,9 @@
                 <output type="text" class="box_design" id="emi"></output>
             </div>
         </div>
+        <section class="footer">
+            <p> &copy; 2022 Calculazo. All rights reserved. </p>
+        </section>
     </div>
 </body>
 
